@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @advicearea.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @advicearea.description %>
+</p>
+
+<ul class="advicearea_sections">
+  <%= render @advicearea.sections %>
+</ul> 
+
+<% if current_user.try(:admin?) %> 
+  <%= form_for([@advicearea, @section]) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+      <%= f.label :title %><br />
+           <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :body %><br />
+           <%= f.text_area :body %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+     </div>
+  <% end %>
+  <%= link_to 'Edit', edit_advicearea_path(@advicearea) %> |
+<% end %>
+<%= link_to 'Back', adviceareas_path %>

@@ -1,0 +1,29 @@
+<h1>Listing adviceareas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @adviceareas.each do |advicearea| %>
+      <tr>
+        <td><%= advicearea.name %></td>
+        <td><%= advicearea.description %></td>
+        <td><%= link_to 'Show', advicearea %></td>
+        <td><%= link_to 'Edit', edit_advicearea_path(advicearea) %></td>
+        <td><%= link_to 'Destroy', advicearea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Advicearea', new_advicearea_path %>
