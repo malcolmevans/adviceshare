@@ -16,7 +16,7 @@ class Section < ActiveRecord::Base
   private
 
         def create_permalink
-          count = Topic.find_by_sql("SELECT COUNT(*) FROM topics WHERE title = '#{self.title}';")
+          count = Section.find_by_sql("SELECT COUNT(*) FROM sections WHERE title = '#{self.title}';")
           count = count[0]['count'].to_i
           if count > 0
             permalink = "#{self.title.gsub(/[^a-z0-9]+/i, '-')}-#{count + 1}".downcase
