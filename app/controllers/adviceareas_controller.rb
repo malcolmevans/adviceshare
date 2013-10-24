@@ -4,8 +4,7 @@ class AdviceareasController < ApplicationController
   # GET /adviceareas
   # GET /adviceareas.json
   def index
-    @adviceareas = advicearea.all
-      #@adviceareas = Advicearea.search(params)
+      @adviceareas = Advicearea.search(params)
   end
 
   # GET /adviceareas/1
