@@ -1,0 +1,30 @@
+[2013-10-23 11:26:11,221][INFO ][node                     ] [Alhazred, Abdul] {0.20.2}[8199]: initializing ...
+[2013-10-23 11:26:11,231][INFO ][plugins                  ] [Alhazred, Abdul] loaded [], sites []
+[2013-10-23 11:26:16,770][INFO ][node                     ] [Alhazred, Abdul] {0.20.2}[8199]: initialized
+[2013-10-23 11:26:16,771][INFO ][node                     ] [Alhazred, Abdul] {0.20.2}[8199]: starting ...
+[2013-10-23 11:26:16,909][INFO ][transport                ] [Alhazred, Abdul] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/25.84.22.229:9300]}
+[2013-10-23 11:26:20,347][INFO ][cluster.service          ] [Alhazred, Abdul] new_master [Alhazred, Abdul][0GX8b7mJQgWTTz-TFe8cuw][inet[/25.84.22.229:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-23 11:26:20,396][INFO ][discovery                ] [Alhazred, Abdul] elasticsearch/0GX8b7mJQgWTTz-TFe8cuw
+[2013-10-23 11:26:20,414][INFO ][http                     ] [Alhazred, Abdul] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/25.84.22.229:9200]}
+[2013-10-23 11:26:20,414][INFO ][node                     ] [Alhazred, Abdul] {0.20.2}[8199]: started
+[2013-10-23 11:26:20,513][INFO ][gateway                  ] [Alhazred, Abdul] recovered [0] indices into cluster_state
+[2013-10-23 11:26:37,644][INFO ][node                     ] [Alhazred, Abdul] {0.20.2}[8199]: stopping ...
+[2013-10-23 11:26:37,664][INFO ][node                     ] [Alhazred, Abdul] {0.20.2}[8199]: stopped
+[2013-10-23 11:26:37,664][INFO ][node                     ] [Alhazred, Abdul] {0.20.2}[8199]: closing ...
+[2013-10-23 11:26:37,687][INFO ][node                     ] [Alhazred, Abdul] {0.20.2}[8199]: closed
+[2013-10-23 12:19:50,563][INFO ][node                     ] [Feline] {0.20.2}[89767]: initializing ...
+[2013-10-23 12:19:50,615][INFO ][plugins                  ] [Feline] loaded [], sites []
+[2013-10-23 12:19:56,582][INFO ][node                     ] [Feline] {0.20.2}[89767]: initialized
+[2013-10-23 12:19:56,582][INFO ][node                     ] [Feline] {0.20.2}[89767]: starting ...
+[2013-10-23 12:19:56,893][INFO ][transport                ] [Feline] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/25.84.22.229:9300]}
+[2013-10-23 12:20:00,144][INFO ][cluster.service          ] [Feline] new_master [Feline][OmoZEPXxTe2TWfPFKn-haQ][inet[/25.84.22.229:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-23 12:20:00,241][INFO ][discovery                ] [Feline] elasticsearch/OmoZEPXxTe2TWfPFKn-haQ
+[2013-10-23 12:20:00,278][INFO ][http                     ] [Feline] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/25.84.22.229:9200]}
+[2013-10-23 12:20:00,279][INFO ][node                     ] [Feline] {0.20.2}[89767]: started
+[2013-10-23 12:20:00,361][INFO ][gateway                  ] [Feline] recovered [0] indices into cluster_state
+[2013-10-23 12:24:25,024][INFO ][cluster.metadata         ] [Feline] [adviceareas] creating index, cause [api], shards [5]/[1], mappings [advicearea]
+[2013-10-23 12:24:59,587][INFO ][cluster.metadata         ] [Feline] [adviceareas] update_mapping [advicearea] (dynamic)
+[2013-10-23 15:00:31,453][INFO ][node                     ] [Feline] {0.20.2}[89767]: stopping ...
+[2013-10-23 15:00:37,292][INFO ][node                     ] [Feline] {0.20.2}[89767]: stopped
+[2013-10-23 15:00:37,292][INFO ][node                     ] [Feline] {0.20.2}[89767]: closing ...
+[2013-10-23 15:00:38,301][INFO ][node                     ] [Feline] {0.20.2}[89767]: closed

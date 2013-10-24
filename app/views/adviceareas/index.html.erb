@@ -11,6 +11,13 @@
     </tr>
   </thead>
 
+<%= form_tag advicearea_path(@advicearea), method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+
   <tbody>
     <% @adviceareas.each do |advicearea| %>
       <tr>
