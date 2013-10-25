@@ -1,0 +1,6 @@
+<%= form_tag advicearea_path(@advicearea), method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query], placeholder: 'What type of advice are you looking for?' %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
