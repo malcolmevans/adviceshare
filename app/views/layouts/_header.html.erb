@@ -1,19 +1,17 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-static-top">
   <div class="navbar-inner">
-    <div class="container">
-      <%= link_to "AdviceShare", root_path, id: "logo" %>
-      <nav>
-        <ul class="nav pull-right">
-          <% if user_signed_in? %>
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Settings", edit_user_registration_path(current_user) %></li>
-          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
-          <% else %>
-          <li><%= link_to "How it Works", howItWorks_path %></li>
-          <li><%= link_to "Sign in", new_user_session_path %></li>
-          <% end %>
-        </ul>
-      </nav>
-    </div>
+    <a class="brand">
+      <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AdviceShare-Oct-7-lowercase-white-ver-c-small.png"), root_path, :id => "logo" %>
+    </a>
+    <ul class="nav pull-right">
+      <% if user_signed_in? %>
+      <li><%= link_to "Home", root_path, class: 'headerlinks' %></li>
+      <li><%= link_to "Settings", edit_user_registration_path(current_user), class: 'headerlinks' %></li>
+      <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'headerlinks' %></li>
+      <% else %>
+      <li><%= link_to "How it Works", howItWorks_path, class: 'headerlinks' %></li>
+      <li><%= link_to "Sign in", new_user_session_path, class: 'headerlinks' %></li>
+      <% end %>
+    </ul>
   </div>
 </header>

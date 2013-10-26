@@ -11,15 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+<form role="form">
+  <div class="form-group">
+    <%= f.text_field :name, :placeholder => 'Name of area' %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
+  <div class="form-group">
+    <%= f.text_area :description, :placeholder => 'Description of the area' %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <button type="submit" class="btn btn-default">Create Area</button>
 <% end %>
+</form>
+

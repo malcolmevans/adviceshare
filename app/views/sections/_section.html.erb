@@ -1,2 +1,7 @@
-
-<li><%= link_to section.title, advicearea_section_path(section.advicearea, section) %></li>
+<ul>
+ <button type="button" class="btn">
+	<%= link_to section.title, advicearea_section_path(section.advicearea, section), class: 'ShowSection' %>
+ </button>
+</ul>
+<br>
+            

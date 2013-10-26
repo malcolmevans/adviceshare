@@ -1,12 +1,12 @@
 class AdviceareasController < ApplicationController
-
+  before_filter :authenticate_user!
   before_action :set_advicearea, only: [:show, :edit, :update, :destroy]
-  #before_action :admin_user, only: [:edit, :update, :destroy]
 
   # GET /adviceareas
   # GET /adviceareas.json
   def index
-      @adviceareas = Advicearea.search(params)
+      @adviceareas = Advicearea.all
+      #@adviceareas = Advicearea.search(params)
   end
 
   # GET /adviceareas/1
