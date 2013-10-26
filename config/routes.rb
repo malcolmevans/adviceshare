@@ -1,5 +1,8 @@
 AdviceShare::Application.routes.draw do
-  root 'static_pages#home'
+  devise_for :users
+
+  root :to => "static_pages#home"
+
   match '/about',    to: 'static_pages#about',    via: 'get'
   match '/topics',    to: 'static_pages#topics',    via: 'get'
   match '/howItWorks',    to: 'static_pages#howItWorks',    via: 'get'
@@ -11,7 +14,7 @@ AdviceShare::Application.routes.draw do
 
   resources :sections
 
-  devise_for :users
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

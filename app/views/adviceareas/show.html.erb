@@ -10,9 +10,11 @@
   <%= @advicearea.description %>
 </p>
 
+
 <ul class="advicearea_sections">
   <%= render @advicearea.sections %>
 </ul> 
+
 
 <% if current_user.try(:admin?) %> 
   <%= form_for([@advicearea, @section]) do |f| %>
@@ -23,7 +25,11 @@
     </div>
     <div class="field">
       <%= f.label :body %><br />
-           <%= f.text_area :body %>
+           <%= f.text_area :body %>     
+    </div>
+    <div class="field">
+    <%= f.label :section_number %><br>
+    <%= f.number_field :section_number %>
     </div>
     <div class="actions">
       <%= f.submit %>

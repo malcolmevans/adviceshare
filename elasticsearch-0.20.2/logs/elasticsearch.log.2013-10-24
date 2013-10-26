@@ -1,0 +1,14 @@
+[2013-10-24 11:18:06,222][INFO ][node                     ] [Crusher] {0.20.2}[10001]: initializing ...
+[2013-10-24 11:18:06,265][INFO ][plugins                  ] [Crusher] loaded [], sites []
+[2013-10-24 11:18:12,386][INFO ][node                     ] [Crusher] {0.20.2}[10001]: initialized
+[2013-10-24 11:18:12,386][INFO ][node                     ] [Crusher] {0.20.2}[10001]: starting ...
+[2013-10-24 11:18:13,068][INFO ][transport                ] [Crusher] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.7.111:9300]}
+[2013-10-24 11:18:16,301][INFO ][cluster.service          ] [Crusher] new_master [Crusher][JjDTQ-vGQ1GAIM3PLh2T4A][inet[/192.168.7.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-24 11:18:16,647][INFO ][discovery                ] [Crusher] elasticsearch/JjDTQ-vGQ1GAIM3PLh2T4A
+[2013-10-24 11:18:16,770][INFO ][http                     ] [Crusher] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.7.111:9200]}
+[2013-10-24 11:18:16,770][INFO ][node                     ] [Crusher] {0.20.2}[10001]: started
+[2013-10-24 11:18:26,342][INFO ][gateway                  ] [Crusher] recovered [1] indices into cluster_state
+[2013-10-24 11:51:17,324][INFO ][cluster.metadata         ] [Crusher] [adviceareas] deleting index
+[2013-10-24 11:51:17,537][INFO ][cluster.metadata         ] [Crusher] [adviceareas] creating index, cause [api], shards [5]/[1], mappings [advicearea]
+[2013-10-24 11:51:17,962][INFO ][cluster.metadata         ] [Crusher] [adviceareas] update_mapping [advicearea] (dynamic)
+[2013-10-24 13:21:23,642][WARN ][monitor.jvm              ] [Crusher] [gc][ParNew][7375][3] duration [3.9s], collections [1]/[4.5s], total [3.9s]/[3.9s], memory [89mb]->[22.9mb]/[990.7mb], all_pools {[Code Cache] [1.2mb]->[1.2mb]/[48mb]}{[Par Eden Space] [68mb]->[487.4kb]/[266.2mb]}{[Par Survivor Space] [8.5mb]->[6.8mb]/[33.2mb]}{[CMS Old Gen] [12.5mb]->[15.6mb]/[691.2mb]}{[CMS Perm Gen] [27.8mb]->[27.8mb]/[82mb]}

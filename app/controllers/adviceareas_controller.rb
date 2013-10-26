@@ -1,5 +1,7 @@
 class AdviceareasController < ApplicationController
+
   before_action :set_advicearea, only: [:show, :edit, :update, :destroy]
+  #before_action :admin_user, only: [:edit, :update, :destroy]
 
   # GET /adviceareas
   # GET /adviceareas.json

@@ -1,9 +1,10 @@
 ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :domain               => "yourdomain.com",
-  :user_name            => "your_name",
-  :password             => "your_password",
+  :domain               => ENV["GMAIL_DOMAIN"],
+  :user_name            => ENV["GMAIL_USERNAME"],
+  :password             => ENV["GMAIL_PASSWORD"],
   :authentication       => "plain",
   :enable_starttls_auto => true
 }
+ActionMailer::Base.default_url_options[:host] = "AdviceShare.com" 

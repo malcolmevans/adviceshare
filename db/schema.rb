@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131022022055) do
+ActiveRecord::Schema.define(version: 20131025133414) do
 
   create_table "adviceareas", force: true do |t|
     t.string   "name"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20131022022055) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "permalink"
+    t.integer  "section_number"
   end
 
   create_table "users", force: true do |t|
