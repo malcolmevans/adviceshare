@@ -8,6 +8,7 @@ AdviceShare::Application.routes.draw do
   match '/topics',    to: 'static_pages#topics',    via: 'get'
   match '/howItWorks',    to: 'static_pages#howItWorks',    via: 'get'
   match '/contact',    to: 'static_pages#contact',    via: 'get'
+  match '/landingpage1',    to: 'static_pages#landingpage1',    via: 'get'
 
  resources :adviceareas do
     resources :sections

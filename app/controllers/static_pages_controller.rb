@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-
+layout 'noheader_nofooter'
 
   def home
   end
@@ -11,5 +11,8 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+  end
+
+  def landingpage1
   end
 end

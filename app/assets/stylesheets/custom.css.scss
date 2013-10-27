@@ -14,11 +14,11 @@ $grayMediumLight: #eaeaea;
 
 /* universal */
 
-
+html,body {
+  background-color: #F0F0F0;
+}
 
 /* typography */
-
-
 
 /* header */
 
@@ -28,21 +28,61 @@ $grayMediumLight: #eaeaea;
 }
 
 .navbar-inner {
+  background-color: #7aba7a;
+  background-image: none;
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #7aba7a;
-  background-image: none;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .navbar .navbar-inner .nav.pull-right {
-    margin-top: 25px; 
+    margin-top: 32px; 
 }
 
 .headerlinks{
   color: #fff !important; 
 }
 
+/* Landing Page */
+
+
+.btn.btn-large.btn-primary{
+  background-color: #00aced;
+  background-image: none;
+  padding: 18px 28px;
+  font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.parentLanding {
+    display:table;
+    border:2px solid gray;
+    height: 300px;
+    width:100%;
+}
+
+.buttonLanding {
+    display:table;
+    border:2px solid gray;
+    height: 200px;
+    width:100%;
+}
+
+.childLanding {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.childLanding img {
+    border:2px solid red;
+    width:80%;
+}
 
 /* AdviceAreas */
 
@@ -50,15 +90,34 @@ $grayMediumLight: #eaeaea;
   padding-left: 150px;
 }
 
-.ShowAdvice, .ShowSection{
-  text-decoration: none !important; 
-}
 
 /* AdviceSections */
 
 .AdviceAreasSections{
   list-style: block;
 }
+
+
+/* How it works */
+
+.parent {
+    display:table;
+    border:2px solid gray;
+    height:400px;
+    width: 100%;
+}
+
+.child {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.child img {
+    border:2px solid red;
+    width:200px;
+}
+
 
 /* footer */
 
@@ -88,10 +147,21 @@ footer {
 
 /* miscellaneous */
 
+.NoUnderlineForLink {
+  text-decoration: none !important; 
+}
+
+#whiteText{
+  color: #fff !important; 
+}
+
 .debug_dump {
   clear: both;
   float: left;
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
+}
+.centerpicture{
+  display: block; margin: 0 auto;
 }

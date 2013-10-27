@@ -1,8 +1,7 @@
 <header class="navbar navbar-static-top">
   <div class="navbar-inner">
-    <a class="brand">
-      <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AdviceShare-Oct-7-lowercase-white-ver-c-small.png"), root_path, :id => "logo" %>
-    </a>
+    <div class="container-fluid">
+      <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AdviceShare-lowercase-white.png"), root_path, :id => "logo" %>
     <ul class="nav pull-right">
       <% if user_signed_in? %>
       <li><%= link_to "Home", root_path, class: 'headerlinks' %></li>

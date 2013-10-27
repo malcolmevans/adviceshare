@@ -13,3 +13,4 @@
 [2013-10-26 17:06:43,111][INFO ][http                     ] [Sludge] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.0.12:9200]}
 [2013-10-26 17:06:43,112][INFO ][node                     ] [Sludge] {0.20.2}[47454]: started
 [2013-10-26 17:06:44,369][INFO ][gateway                  ] [Sludge] recovered [1] indices into cluster_state
+[2013-10-26 22:54:17,163][WARN ][monitor.jvm              ] [Sludge] [gc][ParNew][17532][3] duration [7.3s], collections [1]/[7.8s], total [7.3s]/[7.4s], memory [90.6mb]->[21.2mb]/[990.7mb], all_pools {[Code Cache] [1.1mb]->[1.1mb]/[48mb]}{[Par Eden Space] [68.3mb]->[843.4kb]/[266.2mb]}{[Par Survivor Space] [8.4mb]->[3.1mb]/[33.2mb]}{[CMS Old Gen] [13.8mb]->[17.2mb]/[691.2mb]}{[CMS Perm Gen] [25.3mb]->[25.3mb]/[82mb]}

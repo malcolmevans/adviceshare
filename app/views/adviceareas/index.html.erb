@@ -27,7 +27,7 @@
           </td>
           <td>
             <% if current_user.try(:admin?) %>
-              <button type="button" class="btn"><%= link_to 'Show', advicearea, class: 'ShowAdvice' %></button>
+              <button type="button" class="btn"><%= link_to 'Show', advicearea, class: 'NoUnderlineForLink' %></button>
               <button type="button" class="btn"><%= link_to 'Edit', edit_advicearea_path(advicearea) %></button>
               <button type="button" class="btn"><%= link_to 'Destroy', advicearea, method: :delete, data: { confirm: 'Are you sure?' } %></button>
             <% end %>
