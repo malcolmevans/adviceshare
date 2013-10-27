@@ -15,4 +15,7 @@ layout 'noheader_nofooter'
 
   def landingpage1
   end
+
+  def pricingpage
+  end
 end

@@ -84,6 +84,32 @@ html,body {
     width:80%;
 }
 
+/* Pricing Page */
+
+.pricingparent {
+    display:table;
+    border:2px solid gray;
+    height: 300px;
+    width:100%;
+}
+
+.pricingbuttons {
+    display:table;
+    border:2px solid gray;
+    height: 200px;
+    width:100%;
+}
+
+.pricingchild {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.pricingchild img {
+    border:2px solid red;
+    width:80%;
+}
 /* AdviceAreas */
 
 .AdviceAreascontainer{
@@ -153,6 +179,10 @@ footer {
 
 #whiteText{
   color: #fff !important; 
+}
+
+.spacefortopofpage{
+  margin-bottom: 100px;
 }
 
 .debug_dump {
