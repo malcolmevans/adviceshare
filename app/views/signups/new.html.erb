@@ -1,0 +1,29 @@
+<div class="parentLanding">
+    <div class="childLanding">
+        <img src="https://s3.amazonaws.com/AdviceShare/AdviceShare-big-green.png" />
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+	  <div class="span5 offset1">
+	  	<h2 class="text-center">An easier way to get the advice you're looking for.</h2>
+			<br>
+		<h3 class="text-center">AdviceShare provides professional and academic advice from accomplished people, helping you get closer to your goals, while saving time along the way.</h3>
+	  </div>
+	  
+	</div>
+</div>	
+
+	<div class="span1">
+	  	<div class="container">
+		  <%= simple_form_for @signup, :html => {:class => 'form-horizontal' } do |f| %>
+			<%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {:rows => 10, style: 'width:290px; margin-left: -20px;'} %>
+		    <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {:rows => 10, style: 'width:290px; margin-left: -20px;'} %>
+		    <%= f.input :message, :label => "", :as => :text, :required => true, :placeholder => 'Tell us what type of advice you are looking for!', :input_html => {:rows => 10, style: 'width:290px; height: 75px; margin-left: -20px;'} %>
+		      <%= f.button :submit, 'Sign Up for Early Access', :class=> "btn btn-large btn-primary" %>
+		  <% end %>  
+		</div>
+	  </div>
+
+

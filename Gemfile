@@ -17,6 +17,10 @@ gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# Forms, mail {
+gem 'mail_form', '~> 1.5.0.rc'
+gem 'simple_form', '~> 3.0.0.rc'
+# }
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'

@@ -47,10 +47,10 @@ html,body {
 
 /* Landing Page */
 
-
 .btn.btn-large.btn-primary{
   background-color: #00aced;
   background-image: none;
+  margin-left: px;
   padding: 18px 28px;
   font-size: 22px;
     line-height: normal;
@@ -62,14 +62,14 @@ html,body {
 .parentLanding {
     display:table;
     border:2px solid gray;
-    height: 300px;
+    height: 250px;
     width:100%;
 }
 
 .buttonLanding {
     display:table;
     border:2px solid gray;
-    height: 200px;
+    height: 100px;
     width:100%;
 }
 
@@ -81,7 +81,7 @@ html,body {
 
 .childLanding img {
     border:2px solid red;
-    width:80%;
+    width:70%;
 }
 
 /* Pricing Page */
@@ -184,6 +184,11 @@ footer {
 .spacefortopofpage{
   margin-bottom: 100px;
 }
+.spacefortopoflandingpage{
+  margin-bottom: 50px;
+}
+
+.hidden { display: none; }
 
 .debug_dump {
   clear: both;

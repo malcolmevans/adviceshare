@@ -1,16 +1,1 @@
-[2013-10-26 13:13:47,528][WARN ][monitor.jvm              ] [Bora] [gc][ParNew][51606][5] duration [7.5s], collections [1]/[8.8s], total [7.5s]/[12.1s], memory [87.6mb]->[20.6mb]/[990.7mb], all_pools {[Code Cache] [1.2mb]->[1.2mb]/[48mb]}{[Par Eden Space] [68.3mb]->[1000.2kb]/[266.2mb]}{[Par Survivor Space] [2.4mb]->[2.7mb]/[33.2mb]}{[CMS Old Gen] [16.9mb]->[16.9mb]/[691.2mb]}{[CMS Perm Gen] [27.6mb]->[27.6mb]/[82mb]}
-[2013-10-26 17:05:39,734][INFO ][node                     ] [Bora] {0.20.2}[37372]: stopping ...
-[2013-10-26 17:05:45,785][INFO ][node                     ] [Bora] {0.20.2}[37372]: stopped
-[2013-10-26 17:05:45,786][INFO ][node                     ] [Bora] {0.20.2}[37372]: closing ...
-[2013-10-26 17:05:46,451][INFO ][node                     ] [Bora] {0.20.2}[37372]: closed
-[2013-10-26 17:06:33,866][INFO ][node                     ] [Sludge] {0.20.2}[47454]: initializing ...
-[2013-10-26 17:06:33,907][INFO ][plugins                  ] [Sludge] loaded [], sites []
-[2013-10-26 17:06:39,426][INFO ][node                     ] [Sludge] {0.20.2}[47454]: initialized
-[2013-10-26 17:06:39,426][INFO ][node                     ] [Sludge] {0.20.2}[47454]: starting ...
-[2013-10-26 17:06:39,756][INFO ][transport                ] [Sludge] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.12:9300]}
-[2013-10-26 17:06:42,978][INFO ][cluster.service          ] [Sludge] new_master [Sludge][_Xh_RPr8RMqht_SKNKoHDA][inet[/192.168.0.12:9300]], reason: zen-disco-join (elected_as_master)
-[2013-10-26 17:06:43,071][INFO ][discovery                ] [Sludge] elasticsearch/_Xh_RPr8RMqht_SKNKoHDA
-[2013-10-26 17:06:43,111][INFO ][http                     ] [Sludge] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.0.12:9200]}
-[2013-10-26 17:06:43,112][INFO ][node                     ] [Sludge] {0.20.2}[47454]: started
-[2013-10-26 17:06:44,369][INFO ][gateway                  ] [Sludge] recovered [1] indices into cluster_state
-[2013-10-26 22:54:17,163][WARN ][monitor.jvm              ] [Sludge] [gc][ParNew][17532][3] duration [7.3s], collections [1]/[7.8s], total [7.3s]/[7.4s], memory [90.6mb]->[21.2mb]/[990.7mb], all_pools {[Code Cache] [1.1mb]->[1.1mb]/[48mb]}{[Par Eden Space] [68.3mb]->[843.4kb]/[266.2mb]}{[Par Survivor Space] [8.4mb]->[3.1mb]/[33.2mb]}{[CMS Old Gen] [13.8mb]->[17.2mb]/[691.2mb]}{[CMS Perm Gen] [25.3mb]->[25.3mb]/[82mb]}
+[2013-10-27 19:03:38,725][WARN ][monitor.jvm              ] [Sludge] [gc][ParNew][39056][4] duration [3s], collections [1]/[1s], total [3s]/[10.5s], memory [88.7mb]->[88.7mb]/[990.7mb], all_pools {[Code Cache] [1.1mb]->[1.1mb]/[48mb]}{[Par Eden Space] [68.3mb]->[68.3mb]/[266.2mb]}{[Par Survivor Space] [3.1mb]->[3.1mb]/[33.2mb]}{[CMS Old Gen] [17.2mb]->[17.2mb]/[691.2mb]}{[CMS Perm Gen] [25.3mb]->[25.3mb]/[82mb]}
