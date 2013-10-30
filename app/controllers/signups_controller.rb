@@ -9,10 +9,8 @@ layout 'noheader_nofooter'
 		@signup = Signup.new(params[:signup])
 		@signup.request = request
 			if @signup.deliver
-			  flash.now[:error] = nil
-			  flash.now[:notice] = 'Thank you for your message!'
 			else
-			  flash.now[:error] = 'Cannot send message.'
+			  flash.now[:error] = 'Sign Up failed. Please check form below.'
 			  render :new
 			end
 	end

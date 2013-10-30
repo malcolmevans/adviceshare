@@ -1,29 +1,95 @@
+<div class="spacefortopoflandingpage">
+<div>
 <div class="parentLanding">
     <div class="childLanding">
-        <img src="https://s3.amazonaws.com/AdviceShare/AdviceShare-big-green.png" />
+    	<br>
+    	<br>   
+        <img src="https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare+full+white+logo+bigger.png" />
+        <br>
+        <br>
+   
+        <h2 class="text-center">An easier way to get the advice you're looking for.</h2>
+        <br>
+   
+     <div class="">
+        <h4 class="text-center">AdviceShare provides professional and academic advice from accomplished people, helping you get closer to your goals, while saving time along the way.</h4>
+        <br>
+   	</div>
+	
 	</div>
 </div>
+<div class="row">
 
-<div class="container">
-	<div class="row">
-	  <div class="span5 offset1">
-	  	<h2 class="text-center">An easier way to get the advice you're looking for.</h2>
-			<br>
-		<h3 class="text-center">AdviceShare provides professional and academic advice from accomplished people, helping you get closer to your goals, while saving time along the way.</h3>
-	  </div>
-	  
-	</div>
-</div>	
 
-	<div class="span1">
-	  	<div class="container">
-		  <%= simple_form_for @signup, :html => {:class => 'form-horizontal' } do |f| %>
-			<%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {:rows => 10, style: 'width:290px; margin-left: -20px;'} %>
-		    <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {:rows => 10, style: 'width:290px; margin-left: -20px;'} %>
-		    <%= f.input :message, :label => "", :as => :text, :required => true, :placeholder => 'Tell us what type of advice you are looking for!', :input_html => {:rows => 10, style: 'width:290px; height: 75px; margin-left: -20px;'} %>
+<div class="moveleft">
+  <div class="span5 offset2">
+  	<div class="signupparent">
+      <div class="signupparentchild">
+          
+        <h1 class="text-center"></h1>
+        <br>
+		<h4 class="text-left">
+
+		<div class="clearfix content-heading explainergraphics">
+			<h1 class="pull-left withrightmargin">1</h1>
+          
+          <h4 class="getridofspaceatbottom pulltextup">Tell us what advice you need.</h4>
+          <small class="changesmallfont">You tell us what type of advice you're looking for.</small>
+      	</div>
+      	<div class="clearfix content-heading explainergraphics space2and3">
+      		<h1 class="pull-left withrightmargin pushpicturedown">2</h1>
+          
+          <h4 class="getridofspaceatbottom">We'll connect you. / We'll provide advice.</h4>
+          <small class="changesmallfont">We'll provide you with insights with those who have been in your shoes, and want to help.</small>
+      	</div>
+      	<div class="clearfix content-heading explainergraphics">
+      		<h1 class="pull-left withrightmargin pushpicturedown">3</h1>
+          
+          <h4 class="getridofspaceatbottom">Save Time. Avoid the hassle.</h4>
+          <small class="changesmallfont">You avoid the hassle of emailing strangers, coordinating schedules, and doing tons of google searches.</small>
+      	</div>
+
+      </div>
+    </div>
+
+  </div>
+  	
+ </div> 	
+
+  <div class="span4">
+  	<div class="signupparent">
+      <div class="signupparentchild">
+
+      	  <h1 class="text-center"></h1>
+
+		  <%= simple_form_for @signup, :html => {:class => 'form-inline' } do |f| %>
+			<%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
+		    <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
+		    <%= f.input :message, :label => "", :as => :text, :required => true, :placeholder => 'Tell us what type of advice you are looking for!', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
 		      <%= f.button :submit, 'Sign Up for Early Access', :class=> "btn btn-large btn-primary" %>
 		  <% end %>  
-		</div>
-	  </div>
 
+      </div>
+    </div>
+  </div>
+
+  <div class="span1">
+  	<div class="signupparent">
+      <div class="signupparentchild">
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="buttonLanding">
+    <div class="childLanding">
+        <br>
+        <br>
+        <br>
+        <br>
+        <small>© 2013 AdviceShare. All rights reserved.</small>
+	</div>
+</div>
 

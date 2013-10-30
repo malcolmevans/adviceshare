@@ -15,7 +15,10 @@ $grayMediumLight: #eaeaea;
 /* universal */
 
 html,body {
-  background-color: #F0F0F0;
+  background-color: #EDEDED;
+  background-image: url('https://s3.amazonaws.com/AdviceShare/AS+Background+Image');
+    background-size: cover;
+  background-attachment: fixed;    
 }
 
 /* typography */
@@ -59,30 +62,73 @@ html,body {
             border-radius: 8px;
 }
 
-.parentLanding {
-    display:table;
-    border:2px solid gray;
-    height: 250px;
-    width:100%;
-}
+  /* Landing Page - for AdviceShare Logo */
 
-.buttonLanding {
-    display:table;
-    border:2px solid gray;
-    height: 100px;
-    width:100%;
-}
+      .parentLanding {
+          display:table;
+          height: 100px;
+          width:100%;
+          margin-top: -20px;
+      }
 
-.childLanding {
-    display:table-cell;
-    vertical-align:middle;
-    text-align:center;
-}
+      .buttonLanding {
+          display:table;
+          height: 100px;
+          width:100%;
+      }
 
-.childLanding img {
-    border:2px solid red;
-    width:70%;
-}
+      .childLanding {
+          display:table-cell;
+          vertical-align:middle;
+          text-align:center;
+      }
+
+      .childLanding img {
+          width:40%;
+      }
+
+      .withrightmargin{
+        margin-right: 20px;
+      }
+
+      .moveleft{
+        margin-left: -15px;
+      }
+
+  /* Landing Page - for How it works & Signup box */
+
+      .signupparent {
+          display:table;
+          height:250px;
+          width: 100%;
+      }
+
+      .signupparentchild {
+          display:table-cell;
+          vertical-align:middle;
+          text-align:center;
+      }
+
+      .signupparentchild img {
+          width:200px;
+      }
+
+      .explainergraphics img {
+            width:5%;
+            height: 50px;
+        }
+       
+       .getridofspaceatbottom {
+          margin-bottom: -0.25px;
+      } 
+
+        .pushpicturedown {
+          margin-top: 18px;
+        }
+
+        .space2and3{
+          margin-bottom: 13px;
+        }
 
 /* Pricing Page */
 
@@ -129,7 +175,7 @@ html,body {
 .parent {
     display:table;
     border:2px solid gray;
-    height:400px;
+    height:300px;
     width: 100%;
 }
 
