@@ -17,6 +17,8 @@ AdviceShare::Application.routes.draw do
 
   resources "signups", only: [:new, :create]
 
+  resources "earlysignups", only: [:new, :create]
+
   resources :sections
 
  

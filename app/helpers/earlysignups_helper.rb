@@ -1,0 +1,2 @@
+module EarlysignupsHelper
+end
