@@ -4,6 +4,8 @@
     <div class="childLanding">
     	
         <%= render 'signups/whiteASLogo' %>
+        <br>
+        <br>
         <h4 class="text-center">Thank you for your interest in becoming an AdviceShare mentor.<br>Share some details with us below!</h4>
         <br>
 	
@@ -53,7 +55,7 @@
 
         <%= f.input :education, :label => "", :as => :text, :required => true, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
 
-        <%= f.input :job, :label => "", :as => :text, :required => true, :placeholder => 'Current employer and title', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
+        <%= f.input :job, :label => "", :as => :text, :required => true, :placeholder => 'Current employer and your title.', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
 
       <% end %> 
 
@@ -67,7 +69,7 @@
       <div class="signupparentchild">
 
         <%= simple_form_for @mentor, :html => {:class => 'form-inline' } do |f| %>
-        <%= f.input :jobresponsibilities, :label => "", :as => :text, :required => true, :placeholder => 'Please briefly describe your responsibilities in your current role', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
+        <%= f.input :jobresponsibilities, :label => "", :as => :text, :required => true, :placeholder => 'Please briefly describe your responsibilities in your current role.', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
 
         <%= f.input :expertise, :label => "", :as => :text, :required => true, :placeholder => 'What areas of advice are you comfortable speaking about? (ex: Consulting, Investment Banking, Teach for America, etc.)', :input_html => {:rows => 15, style: 'width:290px; height: 100px; ;'} %>
 
@@ -84,10 +86,7 @@
 
 <div class="buttonLanding">
     <div class="childLanding">
-        <br>
-        <br>
-        <br>
-        <br>
+
         <small>© 2013 AdviceShare. All rights reserved.</small>
 	</div>
 </div>
