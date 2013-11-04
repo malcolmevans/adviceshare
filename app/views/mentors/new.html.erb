@@ -1,0 +1,95 @@
+<div class="spacefortopoflandingpage">
+<div>
+<div class="parentLanding">
+    <div class="childLanding">
+    	
+        <%= render 'signups/whiteASLogo' %>
+        <h3 class="text-center">Thank you for your interest in becoming an AdviceShare mentor!</h3>
+        <h4 class="text-center">Share some details with us below</h4>
+        <br>
+	
+	</div>
+</div>
+<div class="row">
+
+
+<div class="moveleft">
+  <div class="span5">
+  	<div class="signupparent">
+      <div class="signupparentchild">
+          
+        <h3 class="text-center">Why become a mentor?</h3>
+		<h4 class="text-left">
+
+		<div class="clearfix content-heading explainergraphics withleftmargin">
+          <h4 class="getridofspaceatbottom pulltextup">No Commitment</h4>
+          <small class="changesmallfont">You tell us what type of advice you're looking for.<br></br></small>
+      	</div>
+      	<div class="clearfix content-heading explainergraphics withleftmargin">
+          <h4 class="getridofspaceatbottom">Your preferences</h4>
+          <small class="changesmallfont">We'll provide you with insights with those who have been in your shoes, and want to help.<br><br></small>
+
+      	</div>
+      	<div class="clearfix content-heading explainergraphics withleftmargin">
+          <h4 class="getridofspaceatbottom">Your personal scheduler</h4>
+          <small class="changesmallfont">You avoid the hassle of emailing strangers, coordinating schedules, and doing tons of google searches.<br><br></small>
+      	</div>
+
+      </div>
+    </div>
+
+  </div>
+  	
+ </div> 	
+
+  <div class="span3">
+  	<div class="signupparent">
+      <div class="signupparentchild">
+
+		  <%= simple_form_for @mentor, :html => {:class => 'form-inline' } do |f| %>
+			<%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:290px; height: 30px;'} %>
+
+		    <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px;'} %>
+
+
+        <%= f.input :education, :label => "", :as => :text, :required => true, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
+
+        <%= f.input :job, :label => "", :as => :text, :required => true, :placeholder => 'Current employer and title', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
+
+      <% end %> 
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="span3 offset1">
+  	<div class="signupparent">
+      <div class="signupparentchild">
+
+        <%= simple_form_for @mentor, :html => {:class => 'form-inline' } do |f| %>
+        <%= f.input :jobresponsibilities, :label => "", :as => :text, :required => true, :placeholder => 'Please briefly describe your responsibilities in your current role', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
+
+        <%= f.input :expertise, :label => "", :as => :text, :required => true, :placeholder => 'What areas of advice are you comfortable speaking about? (ex: Consulting, Investment Banking, Teach for America, etc.)', :input_html => {:rows => 15, style: 'width:290px; height: 100px; ;'} %>
+
+        <%= f.input :preferences, :label => "", :as => :text, :required => true, :placeholder => 'What type of people do you prefer to speak to? The more details you provide, the better we will be able to match you!', :input_html => {:rows => 10, style: 'width:290px; height: 100px; ;'} %>
+
+          <%= f.button :submit, 'Become a Mentor!', :class=> "btn btn-large btn-primary" %>
+      <% end %>  
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="buttonLanding">
+    <div class="childLanding">
+        <br>
+        <br>
+        <br>
+        <br>
+        <small>© 2013 AdviceShare. All rights reserved.</small>
+	</div>
+</div>
+

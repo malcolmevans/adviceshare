@@ -1,6 +1,7 @@
 class SectionsController < ApplicationController
   before_action :admin_user, only: [:edit, :update, :destroy]
-
+  before_filter :authenticate_user!
+  
   # GET /sections
   # GET /sections.json
   def index

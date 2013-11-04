@@ -2,7 +2,7 @@ AdviceShare::Application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
 
-  root :to => "static_pages#landingpage1"
+  root :to => "signups#new"
 
   match '/about',    to: 'static_pages#about',    via: 'get'
   match '/topics',    to: 'static_pages#topics',    via: 'get'
@@ -16,6 +16,8 @@ AdviceShare::Application.routes.draw do
   end
 
   resources "signups", only: [:new, :create]
+
+  resources "mentors", only: [:new, :create]
 
   resources "earlysignups", only: [:new, :create]
 
