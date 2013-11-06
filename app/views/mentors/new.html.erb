@@ -8,7 +8,6 @@
         <br>
         <h4 class="text-center">Thank you for your interest in becoming an AdviceShare mentor.<br>Share some details with us below!</h4>
         <br>
-  
   </div>
 </div>
 <div class="row">
@@ -43,22 +42,24 @@
     
  </div>   
 
+      <%= simple_form_for @mentor, :html => {:class => 'form-inline' } do |f| %>
+
   <div class="span3">
     <div class="signupparent">
       <div class="signupparentchild">
 
-      <%= simple_form_for @mentor, :html => {:class => 'form-inline' } do |f| %>
-      <%= f.input :name, :label => "", :placeholder => 'Name', :input_html => {style: 'width:290px; height: 30px;'} %>
+      <!-- <%= f.input :_ do %> 
+        <%= f.input_field :name, :style => "width:135px; height: 30px;", :placeholder => 'Name' %>
+        <%= f.input_field :email, :style => "width:195px; height: 30px;",:placeholder => 'Email' %>
+      <% end %> -->  
+      <%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:290px; height: 30px;'} %>
         
-      <%= f.input :email, :label => "", :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px;'} %>
+      <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px;'} %>
 
-        <%= f.input :linkedin, :label => "", :collection => ['Is your LinkedIn profile complete?','Yes','No'], :selected => 'Is your LinkedIn profile complete?', :input_html => {style: 'margin-left: -85px;'} %>
+        <%= f.input :linkedin, :label => "", :required => true, :collection => ['Is your LinkedIn profile complete?','Yes','No'], :selected => 'Are you on LinkedIn?', :input_html => {style: 'width:290px; margin-left: -13px;'} %>
+        <h6 class="text-left" style="margin-bottom: 8px;">*Note: A complete profile includes up-to-date descriptions of your job and responsibilities</h6>
 
-        <%= f.input :expertise, :label => "", :as => :text, :placeholder => 'What areas of advice are you comfortable speaking about? (ex: Consulting, Investment Banking, Teach for America, etc.)', :input_html => {:rows => 15, style: 'width:290px; height: 100px; ;'} %>
-
-        <%= f.input :preferences, :label => "", :as => :text, :placeholder => 'What type of people do you prefer to speak to? The more details you provide, the better we will be able to match you!', :input_html => {:rows => 10, style: 'width:290px; height: 100px; ;'} %>
-
-      <% end %> 
+        <%= f.input :expertise, :label => "", :required => true, :as => :text, :placeholder => 'What areas of advice are you comfortable speaking about? (ex: Consulting, Investment Banking, Teach for America, etc.)', :input_html => {:rows => 15, style: 'width:290px; height: 100px; ;'} %>
 
       </div>
     </div>
@@ -69,21 +70,24 @@
     <div class="signupparent">
       <div class="signupparentchild">
 
-        <%= simple_form_for @mentor, :html => {:class => 'form-inline' } do |f| %>
+        <%= f.input :preferences, :label => "", :required => true, :as => :text, :placeholder => 'What type of people do you prefer to speak to? The more details you provide, the better we will be able to match you!', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ; margin-bottom: px;'} %>
+        
+        <h6 class="text-left" style="margin-bottom: -10px;">*Skip these fields if you have a complete LinkedIn profile and click "Become a mentor!" *</h6>
+        <%= f.input :education, :label => "", :as => :text, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 60px; margin-bottom: -10px;'} %>
 
-        <%= f.input :education, :label => "", :as => :text, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
+        <%= f.input :job, :label => "", :as => :text, :placeholder => 'Current employer and your title.', :input_html => {:rows => 10, style: 'width:290px; height: 30px; margin-bottom: -10px;'} %>
 
-        <%= f.input :job, :label => "", :as => :text, :placeholder => 'Current employer and your title.', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
-
-        <%= f.input :jobresponsibilities, :label => "", :as => :text, :placeholder => 'Please briefly describe your responsibilities in your current role.', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
-
-          <%= f.button :submit, 'Become a Mentor!', :class=> "btn btn-large btn-primary" %>
-      <% end %>  
+        <%= f.input :jobresponsibilities, :label => "", :as => :text, :placeholder => 'Please briefly describe your responsibilities in your current role.', :input_html => {:rows => 10, style: 'width:290px; height: 50px; margin-bottom: 15px;'} %>
+        
+        <%= f.button :submit, 'Become a Mentor!', :class=> "btn btn-large btn-primary", :input_html => {style: 'margin-top: 10px;'} %>
+   
 
       </div>
     </div>
   </div>
-  
+
+  <% end %>  
+     
 </div>
 
 
