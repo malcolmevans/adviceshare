@@ -16,8 +16,8 @@ class Earlysignup < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "AdviceShare Signup!",
-      :to => "malcolm@adviceshare.co",
+      :subject => "AdviceShare Mentor Signup!",
+      :to => "mentors@adviceshare.co",
       :from => %("#{name}" <#{email}>)
     }
   end

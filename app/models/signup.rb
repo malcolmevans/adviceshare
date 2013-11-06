@@ -9,7 +9,7 @@ class Signup < MailForm::Base
   def headers
     {
       :subject => "AdviceShare Signup!",
-      :to => "malcolm@adviceshare.co",
+      :to => "earlysignups@adviceshare.co",
       :from => %("#{name}" <#{email}>)
     }
   end
