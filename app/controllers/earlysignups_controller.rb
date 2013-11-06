@@ -6,7 +6,7 @@ layout 'noheader_nofooter'
 	end
 
 	def create
-		@earlysignup = Earlysignup.new(params[:signup])
+		@earlysignup = Earlysignup.new(params[:earlysignup])
 		@earlysignup.request = request
 			if @earlysignup.deliver
 			else

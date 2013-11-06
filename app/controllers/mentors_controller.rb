@@ -6,7 +6,7 @@ layout 'noheader_nofooter'
 	end
 
 	def create
-		@mentor = Mentor.new(params[:signup])
+		@mentor = Mentor.new(params[:mentor])
 		@mentor.request = request
 			if @mentor.deliver
 			else

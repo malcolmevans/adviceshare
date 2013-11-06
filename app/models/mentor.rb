@@ -3,6 +3,7 @@ class Mentor < MailForm::Base
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   
   attribute :education,      :validate => true
+  attribute :linkedin,      :validate => true
   attribute :job,      :validate => true
   attribute :jobresponsibilities,      :validate => true
   attribute :expertise,      :validate => true

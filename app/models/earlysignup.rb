@@ -1,6 +1,11 @@
 class Earlysignup < MailForm::Base
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+
+  attribute :expertise,      :validate => true
+  attribute :linkedin,      :validate => true
+
+
   attribute :message
   attribute :nickname,  :captcha  => true
 
