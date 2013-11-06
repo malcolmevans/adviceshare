@@ -4,7 +4,10 @@ class Earlysignup < MailForm::Base
 
   attribute :expertise,      :validate => true
   attribute :linkedin,      :validate => true
-
+  attribute :education,      :validate => true
+  attribute :job,      :validate => true
+  attribute :jobresponsibilities,      :validate => true
+  attribute :preferences,      :validate => true
 
   attribute :message
   attribute :nickname,  :captcha  => true

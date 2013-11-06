@@ -142,4 +142,11 @@ SimpleForm.setup do |config|
 
   # Default class for inputs
   # config.input_class = nil
+
+  #Custome Wrapper
+
+  config.wrappers :inline do |b|
+    b.use :placeholder
+    b.use :label_input
+  end
 end
