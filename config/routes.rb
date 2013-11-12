@@ -17,7 +17,7 @@ AdviceShare::Application.routes.draw do
 
   resources "signups", only: [:new, :create]
 
-  resources "mentors", only: [:new, :create]
+  resources "advisors", only: [:new, :create]
 
   resources "earlysignups", only: [:new, :create]
 

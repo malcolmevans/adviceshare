@@ -1,4 +1,4 @@
-class Mentor < MailForm::Base
+class Advisor < MailForm::Base
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
 
@@ -16,8 +16,8 @@ class Mentor < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "AdviceShare Mentor Signup!",
-      :to => "mentors@adviceshare.co",
+      :subject => "AdviceShare Advisor Signup!",
+      :to => "advisors@adviceshare.co",
       :from => %("#{name}" <#{email}>)
     }
   end

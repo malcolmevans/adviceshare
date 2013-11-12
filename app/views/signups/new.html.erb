@@ -40,7 +40,7 @@
       	<div class="clearfix content-heading explainergraphics space2and3">
           	<img class="pull-left pushpicturedownmore withrightmargin" src="https://s3.amazonaws.com/AdviceShare/Landing+Page+Images/Green/AS(4).png"/>
           <h4 class="getridofspaceatbottom">We'll connect you.</h4>
-          <small class="changesmallfont">We'll find an AdviceShare mentor who wants to offer their insights.</small>
+          <small class="changesmallfont">We'll find an AdviceShare advisor who wants to offer their insights.</small>
       	</div>
       	<div class="clearfix content-heading explainergraphics">
           <img class="pull-left pushpicturedownmore withrightmargin" src="https://s3.amazonaws.com/AdviceShare/Landing+Page+Images/Green/AS(3).png"/>
@@ -67,7 +67,7 @@
 		    <%= f.input :message, :label => "", :as => :text, :required => true, :placeholder => 'Tell us what type of advice you are looking for!', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
 		      <%= f.button :submit, 'Sign Up for Early Access', :class=> "btn btn-large btn-primary" %>
 		  <% end %> 
-      <%= render 'signups/becomementor' %> 
+      <%= render 'signups/becomeadvisor' %> 
 
       </div>
     </div>
@@ -83,11 +83,5 @@
   
 </div>
 
-<div class="buttonLanding">
-    <div class="childLanding">
-        <br>
-        <br>
-        <small>© 2013 AdviceShare. All rights reserved.</small>
-	</div>
-</div>
+<%= render 'layouts/landingpagefooter' %>
 
