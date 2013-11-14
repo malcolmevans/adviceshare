@@ -6,7 +6,7 @@ class Advisor < MailForm::Base
   attribute :linkedin,      :validate => true
   attribute :education
   attribute :job
-  attribute :jobresponsibilities
+  attribute :Job_Responsibilities
   attribute :preferences,      :validate => true
 
   attribute :message
