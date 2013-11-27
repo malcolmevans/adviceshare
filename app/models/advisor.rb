@@ -16,7 +16,7 @@ class Advisor < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "AdviceShare Advisor Signup!",
+      :subject => "AdviceShare Adviser Signup!",
       :to => "advisors@adviceshare.co",
       :from => %("#{name}" <#{email}>)
     }
