@@ -15,6 +15,7 @@ gem 'tire'
 gem 'seed_dump'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
+gem 'placeholder-gem'
 gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Forms, mail {
