@@ -1,27 +1,42 @@
 AdviceShare::Application.routes.draw do
-  ActiveAdmin.routes(self)
-  devise_for :users
 
-  root :to => "signups#new"
+  get "blogposts/test"
+  #Blog
+    resources :blogsignups#, path: '/blog'
+    #match 'blog/',    to: 'blogsignups#index',    via: 'get'
 
-  match '/about',    to: 'static_pages#about',    via: 'get'
-  match '/topics',    to: 'static_pages#topics',    via: 'get'
-  match '/howItWorks',    to: 'static_pages#howItWorks',    via: 'get'
-  match '/contact',    to: 'static_pages#contact',    via: 'get'
-  match '/landingpage1',    to: 'static_pages#landingpage1',    via: 'get'
-  match '/pricingpage',    to: 'static_pages#pricingpage',    via: 'get'
+  #Blog posts
+    
+    match '/blog',    to: 'blogposts#index',    via: 'get'
+    match '/blog/homepagetemplate',    to: 'blogposts#blogPostHomePageTemplate',    via: 'get'
+    match '/blog/samplepost',    to: 'blogposts#blogPostTemplate',    via: 'get'
+    #match '/blog/this_test',    to: 'signups#this_test',    via: 'get'
+    #match '/blog/i-am-calling-this-page-this',    to: 'signups#i-am-calling-this-page-this',    via: 'get'
+    #match '/this_test',    to: 'signups#this_test',    via: 'get'
 
- resources :adviceareas do
-    resources :sections
-  end
+  #Early Adopters
+    root :to => "signups#new"
+    resources :signups
+    #resources "signups", only: [:new, :create]
 
-  resources "signups", only: [:new, :create]
-
+  #Advisers
   resources "advisors", only: [:new, :create]
 
-  resources "earlysignups", only: [:new, :create]
+  #Static Pages
+    match '/about',    to: 'static_pages#about',    via: 'get'
+    match '/topics',    to: 'static_pages#topics',    via: 'get'
+    match '/howItWorks',    to: 'static_pages#howItWorks',    via: 'get'
+    match '/contact',    to: 'static_pages#contact',    via: 'get'
 
-  resources :sections
+  
+  #Users and Admin
+    ActiveAdmin.routes(self)
+    devise_for :users
+
+  #Other
+    resources "earlysignups", only: [:new, :create] 
+
+
 
  
   # The priority is based upon order of creation: first created -> highest priority.

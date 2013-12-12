@@ -1,0 +1,28 @@
+<!-- FORM -->
+<div class="row">
+  
+  <div class="span2">
+  </div>
+
+  <div class="span8 formBackground">
+	  <div style="text-align: center;">
+
+			<h3 class="text-center formMainText">From "ugh" to "yes!", we're sharing everything we learned in securing highly coveted opportunities.</h3>
+	    <h3 class="text-center formSubText">Sign up below to get our posts before anyone else!</h3>
+		  <div style="display: inline-block; text-align: left;">
+		  	 <% @blogsignup ||= Blogsignup.new %>
+					<%= simple_form_for @blogsignup, :html => {:class => 'form-inline' } do |f| %>
+						<div class="controls controls-row">
+						<%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:200px; height: 30px; margin-bottom: -20px;'} %>
+					    <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:200px; height: 30px; margin-bottom: -px;'} %>
+					    </div>
+					     <%= f.button :submit, 'Join us!', :class=> "btn btn-large btn-primary" %>
+					<% end %>
+				
+		  </div>
+		</div>
+	</div>
+
+	<div class="span2">
+  </div>
+</div>  

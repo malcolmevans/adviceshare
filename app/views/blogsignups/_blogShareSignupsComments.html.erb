@@ -1,0 +1,82 @@
+<!-- SHARE FORM -->
+<div style="text-align: center;">
+  <div style="display: inline-block; text-align: left;">
+  	<!-- AddThis Button BEGIN -->
+		<div class="addthis_default_style addthis_32x32_style">
+			<a class="addthis_button_twitter"></a>
+			<a class="addthis_button_facebook"></a>
+			<a class="addthis_button_reddit"></a>
+			<a class="addthis_button_digg"></a>
+			<a class="addthis_button_email"></a>
+			<a class="addthis_button_compact"></a>
+		</div>
+			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5283f0c4215e06a6"></script>
+		<!-- AddThis Button END -->
+		</div>
+	</div>
+
+<br>
+
+<!-- FORM -->
+<div class="row">
+  
+  <div class="span2">
+  </div>
+
+  <div class="span8 formBackground">
+	  <div style="text-align: center;">
+
+			<h3 class="text-center formMainText">From "ugh" to "yes!", we're sharing everything we learned in securing highly coveted opportunities.</h3>
+	    <h3 class="text-center formSubText">Sign up below to get our posts before anyone else!</h3>
+		  <div style="display: inline-block; text-align: left;">
+		  	 <% @blogsignup ||= Blogsignup.new %>
+					<%= simple_form_for @blogsignup, :html => {:class => 'form-inline' } do |f| %>
+						<div class="controls controls-row">
+						<%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:200px; height: 30px; margin-bottom: -20px;'} %>
+					    <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:200px; height: 30px; margin-bottom: -px;'} %>
+					    </div>
+					     <%= f.button :submit, 'Join us!', :class=> "btn btn-large btn-primary" %>
+					<% end %>
+				
+		  </div>
+		</div>
+	</div>
+
+	<div class="span2">
+  </div>
+</div>  
+ 
+<br>
+<br>
+
+<!-- COMMENTS -->
+<div class="row">
+  
+  <div class="span2">
+  </div>
+		
+
+  <div class="span8">
+    <!--Disqus Code-->
+
+		<div id="disqus_thread"></div>
+	    <script type="text/javascript">
+	        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	        var disqus_shortname = 'adviceshareblog'; // required: replace example with your forum shortname
+
+	        /* * * DON'T EDIT BELOW THIS LINE * * */
+	        (function() {
+	            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	        })();
+	    </script>
+	    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+
+	<div class="span2">
+  </div>
+</div>  
+

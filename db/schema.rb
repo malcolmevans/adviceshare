@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131026023028) do
+ActiveRecord::Schema.define(version: 20131203224849) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -35,6 +35,46 @@ ActiveRecord::Schema.define(version: 20131026023028) do
     t.datetime "updated_at"
     t.string   "permalink"
   end
+
+  create_table "blogposts", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "permalink"
+  end
+
+  add_index "blogposts", ["permalink"], name: "index_blogposts_on_permalink", unique: true
+
+  create_table "blogs", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "permalink"
+  end
+
+  add_index "blogs", ["permalink"], name: "index_blogs_on_permalink", unique: true
+
+  create_table "forums", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "permalink"
+  end
+
+  add_index "posts", ["permalink"], name: "index_posts_on_permalink", unique: true
 
   create_table "sections", force: true do |t|
     t.string   "title"

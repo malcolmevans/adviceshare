@@ -22,5 +22,8 @@ module AdviceShare
 
     #For Bootstrap
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+    #use rails scaffolding generator
+    config.app_generators.scaffold_controller = :scaffold_controller
   end
 end

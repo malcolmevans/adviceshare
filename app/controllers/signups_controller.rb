@@ -10,8 +10,15 @@ layout 'noheader_nofooter'
 		@signup.request = request
 			if @signup.deliver
 			else
-			  flash.now[:error] = 'Sign Up failed. Please check form below.'
-			  render :new
+			  flash.now[:notice] = "Post can not be saved, please enter information."
+			  
 			end
 	end
+
+	def this_test
+		@signup = Signup.new
+	end
+
+	def show
+  	end
 end

@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 layout 'noheader_nofooter'
-  before_filter :authenticate_user!
+  #before_filter :authenticate_user!
 
   def home
   end
@@ -9,15 +9,13 @@ layout 'noheader_nofooter'
   end
 
   def contact
+    @blogsignup = Blogsignup.new
   end
 
   def about
   end
-
-  def landingpage1
-  end
-
-  def pricingpage
+  
+  def test
   end
 
 end

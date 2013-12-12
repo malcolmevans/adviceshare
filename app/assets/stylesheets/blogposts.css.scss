@@ -20,8 +20,8 @@ $grayMediumLight: #eaeaea;
 /* universal */
 
 html,body {
-  background-color: #EDEDED;
-  background-image: url('https://s3.amazonaws.com/AdviceShare/AS+Background+Image');
+  background-color: #fff;
+  /* background-image: url('https://s3.amazonaws.com/AdviceShare/AS+Background+Image');
    /* background-image: url('http://unsplash.s3.amazonaws.com/batch%204/jet-sky.jpg'); */
   background-size: cover;
   background-attachment: fixed;    
@@ -34,51 +34,122 @@ html,body {
 .navbar-inner .blogheader {
   background-color: #fff;
   background-image: none;
-  min-height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+  border: 0 !important;
+  box-shadow: none !important;
+ 
 }
 
-/* header */
+/*.positionAS{
+  margin-left: 150px;
+}*/
 
-#logo {
-  float: left;
+.footerlinks{
+  color: #404040 !important;
+  margin-left: px; 
+/*  position:fixed;
+  top:60px;
+  right:250px;*/
+}
+
+.nav .pull-right{
+    margin-right: px;
+    color: #909090 !important;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+IMG.blogpostimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; }
+
+.centerContent{
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: -60px;
+}  
+
+.postPreviewContent{
   margin-top: 10px;
+  color: #949494 !important;
+  font-style: italic;
+  font-weight: 500;
+}    
+
+.redirectNotice{
+  background-color: #FAFAFF;
+  color: #404040;
+  font-size: 20px;
+  padding-bottom: 20px;
+
 }
 
-.navbar-inner {
-  background-color: #7aba7a;
-  background-image: none;
-  min-height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+.center { 
+  float: none; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
-.navbar .navbar-inner .nav.pull-right {
-    margin-top: 32px; 
+.formBackground{
+  background-color: #FAFAFF !important;
+  border-radius:3px !important;
+  box-shadow: inset 0px 0px 3px 1px #d3d3d3, 0px 0px 4px 1px #d3d3d3 !important;
+  border:7px solid white !important;
 }
 
-.headerlinks{
-  color: #fff !important; 
+.formMainText{
+  color: #404040 !important;
 }
 
-/* Landing Page */
-
+.formSubText{
+  color: #00aced !important;
+}
 .btn.btn-large.btn-primary{
   background-color: #00aced;
   background-image: none;
-  margin-left: px;
-  padding: 18px 28px;
+  margin-left: 50px;
   font-size: 22px;
     line-height: normal;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
             border-radius: 8px;
 }
+
+/* header */
+
+#logo {
+  float: left;
+  margin-top: 20px;
+  margin-left: px;
+  width: 200px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.navbar-inner {
+  background-color: #fff;
+  background-image: none;
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.navbar .navbar-inner .nav.pull-right {
+    margin-top: 32px; 
+}
+
+
+
+
+
+/* Landing Page */
+
+
 
   /* Landing Page - for AdviceShare Logo */
 
@@ -210,28 +281,6 @@ html,body {
 .AdviceAreasSections{
   list-style: block;
 }
-
-
-/* How it works */
-
-.parent {
-    display:table;
-    border:2px solid gray;
-    height:300px;
-    width: 100%;
-}
-
-.child {
-    display:table-cell;
-    vertical-align:middle;
-    text-align:center;
-}
-
-.child img {
-    border:2px solid red;
-    width:200px;
-}
-
 
 /* footer */
 
