@@ -39,9 +39,9 @@ html,body {
  
 }
 
-/*.positionAS{
-  margin-left: 150px;
-}*/
+.positionAS{
+  margin-left: 30px;
+}
 
 .footerlinks{
   color: #404040 !important;
@@ -60,10 +60,11 @@ html,body {
 }
 
 .nav .pull-right{
-    margin-right: px;
+    margin-right: 50px;
     color: #909090 !important;
     font-weight: 400;
     font-size: 16px;
+    margin-top: 7px;
 }
 
 IMG.blogpostimage {
@@ -143,7 +144,7 @@ IMG.blogpostimage {
   float: left;
   margin-top: 20px;
   margin-left: px;
-  width: 200px;
+  width: 250px;
   padding-bottom: 20px;
   padding-right: 20px;
 }
