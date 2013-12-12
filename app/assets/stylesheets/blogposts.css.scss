@@ -113,8 +113,10 @@ IMG.blogpostimage {
 .formSubText{
   color: #00aced !important;
 }
-.btn.btn-large.btn-primary{
+.btn.btn-large.btn-primary-blog{
   background-color: #00aced;
+  color: #fff;
+  font-weight: 250;
   background-image: none;
   margin-left: 50px;
   font-size: 22px;
@@ -124,6 +126,17 @@ IMG.blogpostimage {
             border-radius: 8px;
 }
 
+.btn.btn-large.btn-primary{
+  background-color: #00aced;
+  background-image: none;
+  margin-left: px;
+  padding: 18px 28px;
+  font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
 /* header */
 
 #logo {
