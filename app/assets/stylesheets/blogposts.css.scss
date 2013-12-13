@@ -87,7 +87,8 @@ IMG.blogpostimage {
 }    
 
 .redirectNotice{
-  background-color: #FAFAFF;
+  #background-color: #FAFAFF;
+  background-image: url('https://s3.amazonaws.com/AdviceShare/Screen+Shot+2013-12-13+at+10.12.48+AM.png');
   color: #404040;
   font-size: 20px;
   padding-bottom: 20px;
@@ -101,18 +102,22 @@ IMG.blogpostimage {
 }
 
 .formBackground{
-  background-color: #FAFAFF !important;
+  #background-color: #EBF0FA !important;
+  background-image: url('https://s3.amazonaws.com/AdviceShare/Screen+Shot+2013-12-13+at+10.12.48+AM.png');
   border-radius:3px !important;
-  box-shadow: inset 0px 0px 3px 1px #d3d3d3, 0px 0px 4px 1px #d3d3d3 !important;
+  box-shadow: inset 0px 0px 7px 3px #E6E6E6, 0px 0px 5px 3px #E6E6E6 !important;
   border:7px solid white !important;
 }
 
 .formMainText{
   color: #404040 !important;
+  font-weight: 1800;
+  line-height:150%
 }
 
 .formSubText{
   color: #00aced !important;
+  font-weight: 250;
 }
 .btn.btn-large.btn-primary-blog{
   background-color: #00aced;

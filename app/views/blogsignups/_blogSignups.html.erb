@@ -6,9 +6,10 @@
 
   <div class="span8 formBackground">
 	  <div style="text-align: center;">
-
-			<h3 class="text-center formMainText">From "ugh" to "yes!", we're sharing everything we learned in securing highly coveted opportunities.</h3>
-	    <h3 class="text-center formSubText">Sign up below to get our posts before anyone else!</h3>
+			<br>
+			<br>
+			<h2 class="text-center formMainText">From "ugh" to "yes!", we're sharing everything we learned in securing highly coveted opportunities.</h2>
+	    <h2 class="text-center formSubText">We've learned a lot and so will you.</h2>
 		  <div style="display: inline-block; text-align: left;">
 		  	 <% @blogsignup ||= Blogsignup.new %>
 					<%= simple_form_for @blogsignup, :html => {:class => 'form-inline' } do |f| %>
@@ -18,7 +19,8 @@
 					    </div>
 					     <%= f.button :submit, 'Join us!', :class=> "btn btn-large btn-primary-blog" %>
 					<% end %>
-				
+			<br>
+			<br>		
 		  </div>
 		</div>
 	</div>
