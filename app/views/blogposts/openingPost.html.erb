@@ -1,0 +1,105 @@
+<% provide(:title, 'Blog') %>
+
+<!--Put picture for post here -->
+<br>
+<div class="row">
+   <a href="http://AdviceShare.co/blog/"><img class="blogpostimage" src="https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare-big-green.png" /></a>
+</div>
+
+<!--Put Blog post title here-->
+<div class="row">
+  
+  <div class="span2">
+  </div>
+
+  <div class="span8">
+    <h1 class="text-center"><%= link_to "The type of stuff we're blogging about", "http://www.AdviceShare.co/blog/I-Am-Calling-This-Page-This" %></h1>
+  </div>
+
+  <div class="span2">
+  </div>
+
+</div>
+
+<!--Author bio here-->
+<div class="row">
+  
+  <div class="span3">
+  </div>
+
+  <div class="span6">
+    <!--<h6 class="text-center"><%= link_to "By The AdviceShare team", "http://www.AdviceShare.co/blog/I-Am-Calling-This-Page-This", class: 'blogAuthorName' %><%= link_to " | Why is this anonymous?", "http://www.AdviceShare.co/blog/I-Am-Calling-This-Page-This", class: 'blogAuthorName' %></h6>-->
+
+    <h4 class="text-center"><%= link_to (image_tag "https://s3.amazonaws.com/AdviceShare/AS_Favicon.png", :title => 'Image_Title', class: 'blogAuthorImage') %><%= link_to "By The AdviceShare team", "http://www.AdviceShare.co/blog/I-Am-Calling-This-Page-This", class: 'blogAuthorName' %></h4>
+  </div>
+
+  <div class="span3">
+  </div>
+
+</div>
+
+
+<!--Put Preview Content Here-->
+<div class="row">
+  
+  <div class="span2">
+  </div>
+
+
+  <div class="span8">
+    <h1 class="text-center postPreviewContent">We're sharing the strategies, challenges and mistakes we learned in securing highly coveted opportunities.</h1>
+    
+    <hr>
+    <h5 class="blogPostText">Welcome to our blog! Here we will be sharing our strategies, mistakes and challenges of successfully securing various professional and academic opportunities. Our posts will be curated from our team at AdviceShare, our network of AdviceShare Advisers, and fellow bloggers. Below you can find our initial list of posts:<h5>
+
+
+    <span class="tab">
+      <h4 class="tab">Applying to school</h4>
+       <ul class="extraTab">
+        <li><%= link_to "Here’s exactly what I did to get into Columbia Law School;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "Applying to Business School; Insights from a first year student at Harvard;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "3 things I wish I did during college that would have made applying to Grad School easier;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "Getting into MFA programs are tough. Here is how I got into the Actors Studio Drama School two months before classes started.", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+      </ul>
+
+      <h4 class="tab">Securing Internships</h4>
+
+      <ul class="extraTab">
+        <li><%= link_to "In Pursuit of the Dream: How I Landed a Position as A White House Intern", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "5 things the real world has taught me since I graduated 3 years ago;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "3 things I wish I did during college that would have made applying to Grad School easier;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "Landing an opportunity at Google; Insights from a two-time intern and full-time employee", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+      </ul>
+
+      <h4 class="tab">Full-time opportunities</h4>
+
+      <ul class="extraTab">
+        <li><%= link_to "How I got a job on Wall Street even though I knew nothing about finance;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "Transitioning from finance to tech, here's how I did it", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "Here's what I did to break into the sports world", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+      </ul>
+
+      <h4 class="tab">General</h4>
+
+      <ul class="extraTab">
+        <li><%= link_to "4 interview techniques that may surprise you;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "How to get a letter of recommendation from a professor who doesn't remember you;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+        <li><%= link_to "The Art & Science of networking, part 1; The Art & Science of networking, part 2;", blog_postComingSoon_path, class: 'NoUnderlineForBlogLinks blogPostText' %></li>
+      </ul>
+    </span>
+
+    <h5 class="blogPostText">Have suggestions for additional posts? Want to share some general thoughts? Want to write a post? Just let us know in the comments below or email us! If you want to be notified when a post launches just sign up below.</h5>
+
+  </div>
+
+  <div class="span2">
+  </div>
+
+</div>
+
+ <br>
+ <br>
+<br>
+
+ <%= render 'blogsignups/blogShareSignupsComments' %>
+

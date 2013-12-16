@@ -1,18 +1,21 @@
 AdviceShare::Application.routes.draw do
 
-  get "blogposts/test"
-  #Blog
-    resources :blogsignups#, path: '/blog'
-    #match 'blog/',    to: 'blogsignups#index',    via: 'get'
-
-  #Blog posts
-    
+  #Blog Homepage
     match '/blog',    to: 'blogposts#index',    via: 'get'
+
+  #Blog Posts
+    match '/blog/advice-to-land-highly-coveted-professional-and-academic-opportunities',    to: 'blogposts#openingPost',    via: 'get'
+
+  #Blog Templates
     match '/blog/homepagetemplate',    to: 'blogposts#blogPostHomePageTemplate',    via: 'get'
     match '/blog/samplepost',    to: 'blogposts#blogPostTemplate',    via: 'get'
-    #match '/blog/this_test',    to: 'signups#this_test',    via: 'get'
-    #match '/blog/i-am-calling-this-page-this',    to: 'signups#i-am-calling-this-page-this',    via: 'get'
-    #match '/this_test',    to: 'signups#this_test',    via: 'get'
+    match '/blog/postComingSoon',    to: 'blogposts#postNotReadyYet',    via: 'get'
+
+
+  #Blog
+    resources :blogsignups#, path: '/blog'
+    get "blogposts/test"
+    #match 'blog/',    to: 'blogsignups#index',    via: 'get'
 
   #Early Adopters
     root :to => "signups#new"

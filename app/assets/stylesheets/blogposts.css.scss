@@ -59,6 +59,49 @@ html,body {
   right:250px;*/
 }
 
+.NoUnderlineForLink {
+  text-decoration: none !important;  
+}
+
+
+.blogAuthorName {
+  text-decoration: none !important;
+  font-style: italic; 
+  color: #212121;
+  font-weight: 300; 
+}
+
+.NoUnderlineForBlogLinks {
+  text-decoration: none !important;
+  color: #212121;
+  font-weight: 300; 
+}
+
+.blogPostText {
+  text-decoration: none !important;
+  font-size: 18px; 
+  color: #4F4F4F;
+  font-weight: 300; 
+  line-height:150%
+}
+.tab { margin-left: 40px; }
+.extraTab { margin-left: 80px; }
+
+.blogAuthorImage{
+  float: left !important; 
+  width: 07%;
+  margin-left: 165px;
+  margin-right: -150px;
+  margin-top: -07px;
+}
+
+.roundAuthorImage{
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
 .nav .pull-right{
     margin-right: 70px;
     color: #909090 !important;
@@ -326,9 +369,7 @@ footer {
 
 /* miscellaneous */
 
-.NoUnderlineForLink {
-  text-decoration: none !important; 
-}
+
 
 #whiteText{
   color: #fff !important; 

@@ -1,0 +1,78 @@
+<% provide(:title, 'Blog') %>
+
+<!--Put picture for post here -->
+<br>
+<br>
+
+<!--Put Blog post title here-->
+<div class="row">
+  
+  <div class="span3">
+  </div>
+
+  <div class="span6">
+    <!--<h1 class="text-center"><%= link_to "First Blogpost Goes Here", "http://www.AdviceShare.co/blog/I-Am-Calling-This-Page-This" %></h1>-->
+  </div>
+
+  <div class="span3">
+  </div>
+
+</div>
+
+
+<!--Put Preview Content Here
+<div class="row">
+  
+  <div class="span2">
+  </div>
+
+
+  <div class="span8">
+    <h1 class="text-center postPreviewContent">HLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</h1>
+  </div>
+
+  <div class="span2">
+  </div>
+
+</div>-->
+
+ <br>
+ <br>
+<br>
+<!-- FORM -->
+<div class="row">
+  
+  <div class="span2">
+  </div>
+
+  <div class="span8 formBackground">
+    <div style="text-align: center;">
+      <br>
+      <br>
+      <h2 class="text-center formMainText">Thanks for your interest! This post is not quite ready yet.</h2>
+      <h3 class="text-center formSubText">Sign up and we'll make sure you don't miss it!</h3>
+      <div style="display: inline-block; text-align: left;">
+         <% @blogsignup ||= Blogsignup.new %>
+          <%= simple_form_for @blogsignup, :html => {:class => 'form-inline' } do |f| %>
+            <div class="controls controls-row">
+            <%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:200px; height: 30px; margin-bottom: -20px;'} %>
+              <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:200px; height: 30px; margin-bottom: -px;'} %>
+              </div>
+               <%= f.button :submit, 'Join us!', :class=> "btn btn-large btn-primary-blog" %>
+          <% end %>
+      <br>
+      <br>    
+      </div>
+    </div>
+  </div>
+
+  <div class="span2">
+  </div>
+</div>  
+ <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
