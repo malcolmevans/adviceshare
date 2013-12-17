@@ -1,16 +1,17 @@
 AdviceShare::Application.routes.draw do
 
   #Blog Homepage
-    match '/blog',    to: 'blogposts#index',    via: 'get'
+    #match '/blog',    to: 'blogposts#onlySignUpFormIndex',    via: 'get'
 
   #Blog Posts
-    match '/blog/advice-to-land-highly-coveted-professional-and-academic-opportunities',    to: 'blogposts#openingPost',    via: 'get'
+    match '/blog/professional-and-academic-opportunities',    to: 'blogposts#openingPost',    via: 'get'
+    match '/blog',    to: 'blogposts#openingPost',    via: 'get'
 
   #Blog Templates
     match '/blog/homepagetemplate',    to: 'blogposts#blogPostHomePageTemplate',    via: 'get'
     match '/blog/samplepost',    to: 'blogposts#blogPostTemplate',    via: 'get'
     match '/blog/postComingSoon',    to: 'blogposts#postNotReadyYet',    via: 'get'
-
+    
 
   #Blog
     resources :blogsignups#, path: '/blog'
