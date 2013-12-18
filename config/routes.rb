@@ -23,6 +23,8 @@ AdviceShare::Application.routes.draw do
     resources :signups
     #resources "signups", only: [:new, :create]
 
+
+
   #Advisers
   resources "advisors", only: [:new, :create]
 

@@ -77,6 +77,12 @@ html,body {
   font-weight: 300; 
 }
 
+.NoUnderlineForAuthorLinks{
+  text-decoration: none !important;
+  color: #00aced !important;
+  font-weight: 300; 
+}
+
 .blogPostText {
   text-decoration: none !important;
   font-size: 18px; 
@@ -93,6 +99,15 @@ html,body {
   margin-left: 165px;
   margin-right: -150px;
   margin-top: -07px;
+}
+
+.blogAuthorImageDetailed{
+  float: left !important; 
+  width:125px;
+  height:125px;
+  margin-left: 100px;
+  margin-right: -150px;
+  margin-top: 07px;
 }
 
 .roundShareLinks{
@@ -145,8 +160,8 @@ IMG.signupPageimage {
 .postPreviewContent{
   margin-top: 10px;
   color: #949494 !important;
-  font-style: italic;
-  font-weight: 500;
+  font-weight: 300;
+  line-height:120%
 }    
 
 .redirectNotice{
