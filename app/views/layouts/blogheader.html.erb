@@ -2,11 +2,28 @@
 <html>
   <head>
 
-    <meta property="og:title" content="AdviceShare" />
-    <meta property="og:url" content="www.AdviceShare.co" />
-    <meta property="og:description" content="AdviceShare makes it easier for people seeking professional and academic advice to connect with those who want to help, and vice versa." />
-    <meta property="og:image" content="https://s3.amazonaws.com/AdviceShare/AS_Favicon.png" />
-    <meta name="bitly-verification" content="146c41ae9b52"/>
+    <!-- BLOG REDIRECT 
+    <meta http-equiv="refresh" content="1; url=http://www.adviceshare.co//blog/professional-and-academic-opportunities">
+     BLOG REDIRECT END -->
+
+    <!--Meta TAGS-->
+    <meta name="description" content="AdviceShare is like match.com for Advice. We make it easier for people seeking an edge to connect with those who want to help, and vice versa.">
+    <link rel="author" href="https://plus.google.com/+MalcolmEvans/">
+
+  <% if content_for? :for_socialmedia %>
+    <%= yield :for_socialmedia %>
+  <% end %>
+    <!--Facebook-->
+    <meta property="og:type" content="blog"/>
+    <meta property="og:title" content="AdviceShare Blog" />
+    <meta property="fb:admins" content="755565431"/>
+    <meta property="og:image" content="https://s3.amazonaws.com/AdviceShare/AdviceShare+favicon_smaller+size.png" />
+    
+    <!--Twitter-->
+    <meta name="twitter:title" content="AdviceShare Blog">
+    <meta name="twitter:card" content="blog">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/AdviceShare/AdviceShare+favicon_smaller+size.png">
+
 
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag "blogposts", media: "all",
