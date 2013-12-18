@@ -4,7 +4,7 @@ AdviceShare::Application.routes.draw do
     #match '/blog',    to: 'blogposts#onlySignUpFormIndex',    via: 'get'
 
   #Blog Posts
-    match '/blog/professional-and-academic-opportunities',    to: 'blogposts#openingPost',    via: 'get'
+    match '/blog/highly-coveted-professional-and-academic-positions',    to: 'blogposts#openingPost',    via: 'get'
     match '/blog',    to: 'blogposts#index',    via: 'get'
 
   #Blog Templates
