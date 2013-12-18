@@ -69,6 +69,7 @@ html,body {
   font-style: italic; 
   color: #212121;
   font-weight: 300; 
+  margin-top: 15px;
 }
 
 .NoUnderlineForBlogLinks {
@@ -93,21 +94,22 @@ html,body {
 .tab { margin-left: 40px; }
 .extraTab { margin-left: 80px; }
 
-.blogAuthorImage{
-  float: left !important; 
-  width: 07%;
-  margin-left: 165px;
-  margin-right: -150px;
-  margin-top: -07px;
+.explainergraphicsAuthor img{
+  width: 50px;
 }
 
 .blogAuthorImageDetailed{
   float: left !important; 
-  width:125px;
-  height:125px;
   margin-left: 100px;
   margin-right: -150px;
   margin-top: 07px;
+}
+
+.explainergraphics img {
+  width:125px;
+  height:125px;
+  padding-bottom: 80px;
+  margin-top: 25px;
 }
 
 .roundShareLinks{
@@ -139,7 +141,7 @@ IMG.blogpostimage {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -80px;
+    margin-top: -50px;
     width: 40%; }
 
 IMG.signupPageimage {
@@ -296,10 +298,7 @@ IMG.signupPageimage {
           width:200px;
       }
 
-      .explainergraphics img {
-            width:10%;
-            height: 50px;
-        }
+      
        
        .getridofspaceatbottom {
           margin-bottom: -0.25px;

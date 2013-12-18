@@ -15,43 +15,54 @@
 <!--Put picture for post here -->
 <br>
 <div class="row">
-  <a href="http://www.AdviceShare.co/blog/" title="Adviceshare blog" alt="Grad School-Internships-Full Time Jobs-Life Skills"><img class="blogpostimage" src="https://s3.amazonaws.com/AdviceShare/Chest+treasure.jpg" /></a>
+  <a href="http://www.AdviceShare.co/blog/" title="Adviceshare blog" alt="Grad School-Internships-Full Time Jobs-Life Skills"><img class="blogpostimage" src="https://s3.amazonaws.com/AdviceShare/Blog+Post+Images/Landing+Professional+and+Academic+Positions.jpg" /></a>
 </div>
 
 <!--Put Blog post title here-->
-<div class="row">
-  
-  <div class="span2">
-  </div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    
+    <div class="span2">
+    </div>
 
-  <div class="span8">
-    <h1 class="text-center"><%= link_to "How we landed the following professional and academic positions", "http://www.AdviceShare.co/blog/highly-coveted-professional-and-academic-positions", class: 'NoUnderlineForLink' %></h1>
-    <br>
-  </div>
+    <div class="span8">
+      <h1 class="text-center"><%= link_to "How we landed the following professional and academic positions", "http://www.AdviceShare.co/blog/highly-coveted-professional-and-academic-positions", class: 'NoUnderlineForLink' %></h1>
+      <br>
+    </div>
 
-  <div class="span2">
-  </div>
+    <div class="span2">
+    </div>
 
-</div>
+  </div>
+ </div> 
+
+
 
 <!--Author bio here-->
-<div class="row">
+
+<div class="row-fluid">
+  <div class="clearfix content-heading explainergraphicsAuthor">  
   
-  <div class="span3">
+  <div class="span4">
   </div>
 
-  <div class="span6">
-    <!--<h6 class="text-center"><%= link_to "By The AdviceShare team", "http://www.AdviceShare.co/blog/I-Am-Calling-This-Page-This", class: 'blogAuthorName' %><%= link_to " | Why is this anonymous?", "http://www.AdviceShare.co/blog/I-Am-Calling-This-Page-This", class: 'blogAuthorName' %></h6>-->
-
-    <h4 class="text-center"><%= link_to (image_tag "https://s3.amazonaws.com/AdviceShare/AS_Favicon.png", :title => 'Image_Title', class: 'blogAuthorImage') %><%= link_to "By The AdviceShare team", "http://www.AdviceShare.co/blog/#author", class: 'blogAuthorName' %></h4>
-    <br>
+  <div class="span4">
+    <div class="clearfix content-heading" style="margin-left: 40px;">  
+          <div class="clearfix content-heading explainergraphicsAuthor">  
+          <img class="pull-left explainergraphicsAuthor" src="https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare+favicon.png"/>
+          <h4 class="text-left blogAuthorName" style="margin-left: 50px;">
+            <a class="" href="http://www.AdviceShare.co/blog/#author">by The AdviceShare team</a> 
+          </h4>
+        </div>
+  
+    </div>
   </div>
-
-  <div class="span3">
+  
+  <div class="span4">
   </div>
-
+  
+  </div>
 </div>
-
 
 <!--Put Preview Content Here-->
 <div class="row">
@@ -61,17 +72,17 @@
 
 
   <div class="span8">
-    <h1 class="text-center postPreviewContent">We're sharing the strategies, challenges and mistakes we learned in landing the following types of highly coveted positions.</h1>
+    <h1 class="text-center postPreviewContent">We're sharing the strategies, challenges, and mistakes we learned in landing the following types of highly coveted positions.</h1>
     
     <hr>
 
-    <h5 class="blogPostText" style="font-style: italic;">This is the opening post of our new series, Landing Professional and Academic Opportunities.<h5>
+    <h5 class="blogPostText" style="font-style: italic;">This is the opening post of our new series: Landing Professional and Academic Opportunities.<h5>
     <br>
-    <h5 class="blogPostText">"I'm really interested in doing XYZ and would love to hear the advice of someone who has already successfully done it."
+    <h5 class="blogPostText">"I'm really interested in doing XYZ, and would love to hear the advice of someone who has already done it successfully."
     <br><br>
     We've had this thought plenty of times, which sparked a sprint to launch the series you’re reading right now.
     <br><br>
-    We want to share our strategies, mistakes and challenges of successfully securing various professional and academic opportunities. We'll be curating posts from our team at<a class="NoUnderlineForAuthorLinks" href="http://www.adviceshare.co" target="_blank">AdviceShare</a> and fellow bloggers.
+    We want to share our strategies, mistakes and challenges of successfully securing various professional and academic opportunities. We'll be curating posts from our team at <a class="NoUnderlineForAuthorLinks" href="http://www.adviceshare.co" target="_blank">AdviceShare</a> and fellow bloggers.
     <br><br>
     Here's an idea of what we'll be covering in our series:<h5>
     <br>
@@ -123,7 +134,8 @@
     <br>
     Thank you for the support! Please share by clicking below if its not too much trouble :)
     </h5>
-    
+    <br>
+
   <div class="span2">
   </div>
 
@@ -136,32 +148,33 @@
  <%= render 'blogsignups/blogShareSignups' %>
 
  <!--Author detailed bio here-->
-<div class="row">
+<div class="row-fluid">
+  <div class="clearfix content-heading explainergraphics">  
   
-  <div class="span1">
-  </div>
-
-  <div class="span2" id="author">
-    <h4 class="text-center"><%= link_to (image_tag "https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare+favicon.png", :title => 'Image_Title', class: 'blogAuthorImageDetailed'), style: 'width: 900%;' %></h4>
-    <br>
-  </div>
-
-  <div class="span7">
-    <h4 class="text-left blogPostText" style="margin-left: 40px;">
-      <b style="line-height: 130%;">About the author</b>
-    <h4 class="text-left blogPostText" style="margin-left: 40px;">
-      The AdviceShare team consists of people who want to help make it easier for you to land great opportunities by sharing their personal experiences. 
-    </h4>
-    <h4 class="text-left blogPostText" style="margin-left: 40px;">
-      All posts are curated by Malcolm Evans, Founder of AdviceShare (an easier way to give and receive advice). <a class="NoUnderlineForAuthorLinks" href="mailto:malcolm@AdviceShare.co" target="_blank">Reach out to him</a> or <a class="NoUnderlineForAuthorLinks" href="http://www.Twitter.com/malcolm_evans" target="_blank">follow him on Twitter</a>. 
-    </h4>
-  </div>
-  
-
-
   <div class="span2">
   </div>
 
+  <div class="span8" id="author">
+    <div class="clearfix content-heading">  
+          <div class="clearfix content-heading explainergraphics">  
+          <img class="pull-left pushpicturedown withrightmargin" src="https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare+favicon.png"/>
+          <h4 class="text-left blogPostText" style="margin-left: 40px;">
+            <b style="line-height: 130%;">About the author</b>
+          <h4 class="text-left blogPostText" style="margin-left: 40px;">
+            The AdviceShare team consists of people who want to help make it easier for you to land great opportunities by sharing their personal experiences. 
+          </h4>
+          <h4 class="text-left blogPostText" style="margin-left: 40px;">
+            All posts are curated by Malcolm Evans, Founder of AdviceShare (an easier way to give and receive advice). <a class="NoUnderlineForAuthorLinks" href="mailto:malcolm@AdviceShare.co" target="_blank">Reach out to him</a> or <a class="NoUnderlineForAuthorLinks" href="http://www.Twitter.com/malcolm_evans" target="_blank">follow him on Twitter</a>. 
+          </h4>
+        </div>
+  
+    </div>
+  </div>
+  
+  <div class="span2">
+  </div>
+  
+  </div>
 </div>
 
  <%= render 'blogsignups/blogComments' %>
