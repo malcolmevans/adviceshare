@@ -1,50 +1,42 @@
-<div class="spacefortopoflandingpage">
-<div>
-<div class="parentLanding">
-    <div class="childLanding">
-      
-        <%= render 'signups/whiteASLogo' %>
+<div class="row middleSectionOfLandingPage">
+  <div class="parentLanding">
+      <div class="childLanding" style="color: #;">
         <br>
-        <br>
-        <h4 class="text-center">Thank you for your interest in becoming an AdviceShare adviser.<br>Share some details with us below!</h4>
-        <br>
-  </div>
-</div>
+        <br>   
+          <h2 class="text-center" style="margin-top: 160px; margin-left: 10px; line-height: 150%;">Become an adviser and help people who want to follow in your footsteps!</h2>
+            <br>
+
 <div class="row">
 
+  <div class="span3">
+  </div>
 
-<div class="moveleft">
-  <div class="span5">
+  <div class="span4">
     <div class="signupparent">
       <div class="signupparentchild">
           
-        <h3 class="text-center">Why become an adviser?</h3>
+        <h3 class="text-center">Why Adviceshare?</h3><br>
     <h4 class="text-left">
 
-    <div class="clearfix content-heading explainergraphics withleftmargin">
-          <h4 class="getridofspaceatbottom pulltextup">No regular commitment.</h4>
-          <small class="changesmallfont">We know your busy, and your schedule is unpredictable. So we'll only ask you to help whenever you're available.<br></br></small>
+    <div class="">
+          <h4 class="adviserText" style="margin-top: -10px;">Strong matches.</h4>
+          <h5>Let us know the type of people you want to help. E.g. only want to offer advice to people from your alma mater? Let us know and we'll match you accordingly!</h5><br>
+          <h4 class="adviserText"  style="margin-top: -10px;">No regular commitment.</h4>
+          <h5>We know you're busy, so we'll only ask you to help whenever your schedule allows.</h5><br>
+          <h4 class="adviserText" style="margin-top: -10px;">Your own personal assistant.</h4>
+          <h5>No more headaches scheduling a time to connect. We'll coordinate a time that works with your schedule. </h5><br>
         </div>
-        <div class="clearfix content-heading explainergraphics withleftmargin">
-          <h4 class="getridofspaceatbottom">Your preferences.</h4>
-          <small class="changesmallfont">Let us know who you want to help. Only want to offer advice to people from your alma mater? We'll take note and do our best to make it happen.<br><br></small>
-
-        </div>
-        <div class="clearfix content-heading explainergraphics withleftmargin">
-          <h4 class="getridofspaceatbottom">Your own personal assistant.</h4>
-          <small class="changesmallfont">Well coordinate (a call, skype, chat, etc.) to work around your schedule. No more headaches trying to find a time to connect.<br><br></small>
-        </div>
-
+        
       </div>
     </div>
 
   </div>
     
- </div>   
+  
 
       <%= simple_form_for @advisor, :html => {:class => 'form-inline' } do |f| %>
 
-  <div class="span3">
+  <div class="span4">
     <div class="signupparent">
       <div class="signupparentchild">
 
@@ -52,44 +44,39 @@
         <%= f.input_field :name, :style => "width:135px; height: 30px;", :placeholder => 'Name' %>
         <%= f.input_field :email, :style => "width:195px; height: 30px;",:placeholder => 'Email' %>
       <% end %> -->  
-      <%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:290px; height: 30px;'} %>
+      <%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
         
-      <%= f.input :email, :label => ".", :required => true, :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px;'} %>
+      <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
 
-        <%= f.input :linkedin, :label => ".", :required => true, :collection => ['Is your LinkedIn profile complete?','Yes','No'], :selected => 'Are you on LinkedIn?', :input_html => {style: 'width:290px; margin-left: -13px;'} %>
+      <%= f.input :education, :label => "", :required => true, :as => :text, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 40px; margin-bottom: -20px;'} %>
+
+      <%= f.input :expertise, :label => "", :required => true, :as => :text, :placeholder => 'What areas of advice are you comfortable speaking about? (e.g.: Summer internships in the Tech industry)', :input_html => {:rows => 10, style: 'width:290px; height: 60px; margin-bottom: -20px;'} %>
+
+      <%= f.input :preferences, :label => "", :required => true, :as => :text, :placeholder => 'What type of people do you want to help (e.g. Alumni from your school)? The more details you provide, the better we can match you!', :input_html => {:rows => 10, style: 'width:290px; height: 65px; ; margin-bottom: px;'} %>
+
+        <!--<%= f.input :linkedin, :label => "", :required => true, :collection => ['Is your LinkedIn profile complete?','Yes','No'], :selected => 'Are you on LinkedIn?', :input_html => {style: 'width:290px; margin-left: -13px;'} %>
         <h6 class="text-left" style="margin-bottom: 8px;">*Note: A complete profile includes up-to-date descriptions of your job and responsibilities</h6>
-
-        <%= f.input :expertise, :label => ".", :required => true, :as => :text, :placeholder => 'What areas of advice are you comfortable speaking about? (ex: Consulting, Investment Banking, Teach for America, etc.)', :input_html => {:rows => 15, style: 'width:290px; height: 100px; ;'} %>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="span3 offset1">
-    <div class="signupparent">
-      <div class="signupparentchild">
-
-        <%= f.input :preferences, :label => "", :required => true, :as => :text, :placeholder => 'What type of people do you prefer to speak to? The more details you provide, the better we will be able to match you!', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ; margin-bottom: px;'} %>
         
         <h6 class="text-left" style="margin-bottom: -10px;">*Skip these fields if you have a complete LinkedIn profile and click "Become an Adviser!"</h6>
         <%= f.input :education, :label => ".", :as => :text, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 60px; margin-bottom: -10px;'} %>
 
         <%= f.input :job, :label => ".", :as => :text, :placeholder => 'Current employer/university and your title.', :input_html => {:rows => 10, style: 'width:290px; height: 30px; margin-bottom: -10px;'} %>
 
-        <%= f.input :Job_Responsibilities, :label => ".", :as => :text, :placeholder => 'Please briefly describe your responsibilities in your current role.', :input_html => {:rows => 10, style: 'width:290px; height: 50px; margin-bottom: 15px;'} %>
+        <%= f.input :Job_Responsibilities, :label => ".", :as => :text, :placeholder => 'Please briefly describe your responsibilities in your current role.', :input_html => {:rows => 10, style: 'width:290px; height: 50px; margin-bottom: 15px;'} %>-->
         
-        <%= f.button :submit, 'Become an Adviser!', :class=> "btn btn-large btn-primary", :input_html => {style: 'margin-top: 10px;'} %>
-   
-
+        <%= f.button :submit, 'Become an Adviser!', :class=> "btn btn-large btn-primary", style: 'height: 40px; width: 305px;' %>
+        <br>
+        <br>
+        <br>
+        <% end %>  
+        <br>
       </div>
     </div>
   </div>
 
-  <% end %>  
+  
      
 </div>
-
-
-
-<%= render 'layouts/landingpagefooter' %>
+</div>
+</div>
+</div>

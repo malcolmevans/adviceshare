@@ -53,7 +53,7 @@ html,body {
 
 .headerlinks{
   color: #404040 !important;
-  margin-left: px; 
+  margin-top: -50px; 
 /*  position:fixed;
   top:60px;
   right:250px;*/
@@ -63,6 +63,10 @@ html,body {
   text-decoration: none !important;  
 }
 
+.olderBlogPosts{
+  text-decoration: none !important; 
+  font-size: 20px;
+}
 
 .blogAuthorName {
   text-decoration: none !important;
@@ -142,8 +146,24 @@ IMG.blogpostimage {
     margin-left: auto;
     margin-right: auto;
     margin-top: -50px;
-    width: 40%; }
+    height: 350px; }
 
+IMG.blogPostImagesToDate{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    width: 200px;
+}    
+
+IMG.mainBlogpostImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    width: 450px; 
+    height: 350px;
+}
 IMG.signupPageimage {
     display: block;
     margin-left: auto;

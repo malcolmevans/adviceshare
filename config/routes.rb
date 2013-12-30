@@ -6,12 +6,12 @@ AdviceShare::Application.routes.draw do
   #Blog Posts
     match '/blog/highly-coveted-professional-and-academic-positions',    to: 'blogposts#openingPost',    via: 'get'
     match '/blog',    to: 'blogposts#index',    via: 'get'
+    match '/blog/Life-Hacks-for-Holiday-Season-Productivity',    to: 'blogposts#holidayProductivity',    via: 'get'
 
   #Blog Templates
     match '/blog/homepagetemplate',    to: 'blogposts#blogPostHomePageTemplate',    via: 'get'
     match '/blog/samplepost',    to: 'blogposts#blogPostTemplate',    via: 'get'
     match '/blog/postComingSoon',    to: 'blogposts#postNotReadyYet',    via: 'get'
-    
 
   #Blog
     resources :blogsignups#, path: '/blog'

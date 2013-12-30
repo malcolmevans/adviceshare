@@ -2,10 +2,6 @@
 
 @import "bootstrap-responsive";
 
-.formshit{
-  width: 135px; 
-  height: 30px;
-}
 
 /* mixins, variables, etc. */
 
@@ -17,45 +13,77 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
+@media (max-width: 767px)
+{
+    body {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
 /* universal */
 
 html,body {
-  background-color: #EDEDED;
-  background-image: url('https://s3.amazonaws.com/AdviceShare/AS+Background+Image');
-   /* background-image: url('http://unsplash.s3.amazonaws.com/batch%204/jet-sky.jpg'); */
-  background-size: cover;
-  background-attachment: fixed;    
+  
 }
 
+/* Custom container */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+.middleSectionOfLandingPage{
+  background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5255bf45a4a45_1.JPG');
+   /* background-image: url('http://unsplash.s3.amazonaws.com/batch%204/jet-sky.jpg'); */
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* typography */
 
 /* For blog */
 
 .navbar-inner .blogheader {
-  background-color: #fff;
+  background-color: #000;
   background-image: none;
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 200px;
 }
 
 /* header */
+.blogPostText {
+  text-decoration: none !important;
+  font-size: 16px; 
+  color: #4F4F4F !important;
+  font-weight: 100 !important;
+  line-height:150%
+}
 
 #logo {
   float: left;
-  margin-top: 10px;
+  margin-top: 25px;
+  width: 200px;
 }
 
 .navbar-inner {
-  background-color: #7aba7a;
+  #background-color: #61B329;
+  background-color: #000;
   background-image: none;
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 15px;
   margin-bottom: 20px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
 .navbar .navbar-inner .nav.pull-right {
@@ -64,6 +92,7 @@ html,body {
 
 .headerlinks{
   color: #fff !important; 
+  font-size: 14px;
 }
 
 /* Landing Page */
@@ -141,16 +170,19 @@ html,body {
       }
 
       .explainergraphics img {
-            width:10%;
+            width:12%;
             height: 50px;
+            margin-top: px;
         }
-       
+       .smallpictures{
+        margin-top: -3px;
+       }
        .getridofspaceatbottom {
-          margin-bottom: -0.25px;
+          margin-bottom: px;
       } 
 
         .pushpicturedown {
-          margin-top: 12px;
+          margin-top: -5px;
         }
 
         .pushpicturedownmore {
@@ -282,7 +314,7 @@ footer {
   margin-bottom: 100px;
 }
 .spacefortopoflandingpage{
-  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 .hidden { display: none; }

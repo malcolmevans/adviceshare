@@ -1,88 +1,114 @@
-<div class="spacefortopoflandingpage">
-<div>
-<div class="parentLanding">
-    <div class="childLanding">
-    	<br>
-    	<br>   
-        <%= render 'signups/whiteASLogo' %>
-        <br>
-        <br>
-        <br>
-        <h2 class="text-center">Like match.com for Advice.</h4>
-          <br>
-        <h4 class="text-center">AdviceShare makes it easier for people seeking an edge to connect<br> with those who want to help, and vice versa.</h4>
-        
-   
-        <!--<h2 class="text-center">An easier way to get the advice you're looking for.</h2> -->
-     <!--<div class="span10">
-        <h4 class="text-center">AdviceShare makes it easier for people seeking professional and academic advice to connect with those who want to help, and vice versa.</h4>
-        <br>
-   	</div>-->
-	     <br>
-	</div>
-</div>
+<div class="middleSectionOfLandingPage">
+  <div class="row">
+    <div id="wrapper" class="container">
+            <div class="">
+                <div class="center span10">
+                 <ul class="thumbnails">
+                        <li class="span1" id="item2"></li>
+                        <li class="span8" id="item3">
+                          <h1 class="text-center" style="margin-top: 160px; font-size: 50px; line-height: 150%;">An easier way to give <br>and receive great advice.</h1>
+                        </li>
+                        <li class="span1"></li>
+                   </ul><!--/.thumbnails-->
+                </div><!--/.center-->
+            </div><!--/.row-->
+    </div><!--#wrapper-->
+  </div>
+
+
+<div class="row" style="margin-top: px;">
+  <div id="wrapper" class="container">
+          <div class="">
+              <div class="center span9">
+               <ul class="thumbnails">
+                      <li class="span3" id="item1">
+                          <img class="" style="width: 300px; margin-top: -100px;" src=""/>
+                          <br>
+                          <a class="" href=""><i class="fa fa-list-alt fa-5x howItWorksIcons"></i></a>
+                          <h3 class="">Request.</h3>
+                          <small class="changesmallfont">Tell us the type of advice you're looking for or the type of people you want to help.<br></br></small>
+                      </li>    
+                      <li class="span3" id="item2">
+                          <img class="" style="width: 275px; margin-top: -50px;" src=""/>
+                          <br>
+                          <a class="" href=""><i class="fa fa-comments-o fa-5x howItWorksIcons"></i></a>
+                          <h3 class="">Connect.</h3>
+                          <small class="changesmallfont">We'll find a match for you and coordinate a time to chat.<br><br></small>
+                          <br>
+                          <br>
+                      </li>
+                      <li class="span3" id="item3">
+                          <img class="" style="width: 200px; margin-top: -50px;" src=""/>
+                          <br>
+                          <a class="" href=""><i class="fa fa-trophy fa-5x howItWorksIcons"></i></a>
+                          <h3 class="">Make an impact.</h3>
+                          <small class="changesmallfont">You'll get the advice you need, without the hassle of looking for it!<br><br></small>
+                      </li>
+                      <li class="span3"></li>
+                 </ul><!--/.thumbnails-->
+              </div><!--/.center-->
+          </div><!--/.row-->
+  </div><!--#wrapper-->
+
 <div class="row">
-
-
-<div class="moveleft">
-  <div class="span5 offset2">
-  	<div class="signupparent">
-      <div class="signupparentchild">
-          
-        <h1 class="text-center"></h1>
-        <br>
-		<h4 class="text-left">
-
-		<div class="clearfix content-heading explainergraphics">
-          <img class="pull-left pushpicturedown withrightmargin" src="https://s3.amazonaws.com/AdviceShare/Landing+Page+Images/Green/AS(1).png"/>
-          <h4 class="getridofspaceatbottom pulltextup">Make a request.</h4>
-          <small class="changesmallfont">Create a profile and tell us what type of advice you're looking for.<br><br></small>
-      	</div>
-      	<div class="clearfix content-heading explainergraphics space2and3">
-          	<img class="pull-left pushpicturedownmore withrightmargin" src="https://s3.amazonaws.com/AdviceShare/Landing+Page+Images/Green/AS(4).png"/>
-          <h4 class="getridofspaceatbottom">We'll connect you.</h4>
-          <small class="changesmallfont">We'll find an AdviceShare adviser who wants to offer their insights.</small>
-      	</div>
-      	<div class="clearfix content-heading explainergraphics">
-          <img class="pull-left pushpicturedownmore withrightmargin" src="https://s3.amazonaws.com/AdviceShare/Landing+Page+Images/Green/AS(3).png"/>
-          <h4 class="getridofspaceatbottom">Save Time. Avoid the hassle.</h4>
-          <small class="changesmallfont">You'll get the advice you need, without the hassle of looking for it!</small>
-      	</div>
-
-      </div>
-    </div>
-
+  <div id="wrapper" class="container">
+          <div class="">
+              <div class="center span12">
+               <ul class="thumbnails">
+                      <li class="span1" id="item3"></li>
+                      <li class="span10" id="item2">
+                          
+                          <%= simple_form_for @signup, :html => {:class => 'form-horizontal' } do |f| %>
+                          <div class="controls controls-row">
+                          <% end %> 
+                          </div>
+                          
+                      </li>
+                      
+                 </ul><!--/.thumbnails-->
+              </div><!--/.center-->
+          </div><!--/.row-->
+  </div><!--#wrapper-->
   </div>
-  	
- </div> 	
-
-  <div class="span3">
-  	<div class="signupparent">
-      <div class="signupparentchild">
-
-      	  <h1 class="text-center"></h1>
-
-		  <%= simple_form_for @signup, :html => {:class => 'form-inline' } do |f| %>
-			<%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
-		    <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
-		    <%= f.input :message, :label => "", :as => :text, :required => true, :placeholder => 'Tell us what type of advice you are looking for!', :input_html => {:rows => 10, style: 'width:290px; height: 75px; ;'} %>
-		      <%= f.button :submit, 'Sign Up for Early Access', :class=> "btn btn-large btn-primary" %>
-		  <% end %> 
-      <%= render 'signups/becomeadviser' %> 
-
-      </div>
-    </div>
-  </div>
-
-  <div class="span1">
-  	<div class="signupparent">
-      <div class="signupparentchild">
-
-      </div>
-    </div>
-  </div>
-  
 </div>
 
-<%= render 'layouts/landingpagefooter' %>
+<div class="row" style="margin-top: -60px;">
+  <div id="wrapper" class="container">
+          <div class="">
+              <div class="center span10">
+               <ul class="thumbnails">
+                      <li class="span1" id="item1"></li>
+                      <li class="span8" id="item2">
+                        <%= simple_form_for @signup, :html => {:class => 'form-horizontal' } do |f| %>
+                         <%= f.input_field :name, :label => "", :required => true, :placeholder => 'Name', :style => "height: 30px; width: 200px; margin-bottom: 10px;" %>
+                          <%= f.input_field :email, :label => "", :required => true, :placeholder => 'Email', :style => "height: 30px; width: 200px; margin-bottom: 10px;" %>
+                          <!--<%= f.input :message, :label => "", :required => true, :as => :text, :placeholder => 'What type of advice are you looking for?', :input_html => {style: 'width:250px; height: 60px;'} %>-->
+                          <%= f.button :submit, 'Get Early Access', :class=> "btn-large btn-primary", style: 'margin-top: -10px; height: 40px; width: 200px;' %>
+                        <% end %> 
+                      </li>
+                      <li class="span1" id="item3"></li>
+                 </ul><!--/.thumbnails-->
+              </div><!--/.center-->
+          </div><!--/.row-->
+  </div><!--#wrapper-->
+  </div>
+</div>
+
+<div class="row" style="margin-top: -40px;">
+  <div id="wrapper" class="container">
+          <div class="">
+              <div class="center span10">
+               <ul class="thumbnails">
+                      <li class="span1" id="item1"></li>
+                      <li class="span8" id="item2">
+                        <%= link_to "Want to share advice? Become an adviser!", new_advisor_path, class: 'adviserLinks' %>
+                      </li>
+                      <li class="span1" id="item3"></li>
+                 </ul><!--/.thumbnails-->
+              </div><!--/.center-->
+          </div><!--/.row-->
+  </div><!--#wrapper-->
+  </div>
+</div>
+
 

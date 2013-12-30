@@ -1,16 +1,18 @@
-<header class="navbar navbar-static-top">
-  <div class="navbar-inner">
-    <div class="container-fluid">
-      <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare-lowercase-white.png"), root_path, :id => "logo" %>
-    <ul class="nav pull-right">
-      <% if user_signed_in? %>
-      <li><%= link_to "Home", root_path, class: 'headerlinks' %></li>
-      <li><%= link_to "Settings", edit_user_registration_path(current_user), class: 'headerlinks' %></li>
-      <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'headerlinks' %></li>
-      <% else %>
-      <li><%= link_to "How it Works", howItWorks_path, class: 'headerlinks' %></li>
-      <li><%= link_to "Sign in", new_user_session_path, class: 'headerlinks' %></li>
-      <% end %>
-    </ul>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      
+        <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare-Oct-7-lowercase-green-ver-c+copy.png"), root_path, :id => "logo" %>
+      <ul class="nav pull-right">
+        <% if user_signed_in? %>
+        <li><%= link_to "Home", root_path, class: 'blogPostText' %></li>
+        <li><%= link_to "Settings", edit_user_registration_path(current_user), class: 'blogPostText' %></li>
+        <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'blogPostText' %></li>
+        <% else %>
+        <li><%= link_to "Blog", blog_path, class: 'blogPostText' %></li>
+        <li><%= link_to "How it Works", howItWorks_path, class: 'blogPostText' %></li>
+        <li><%= link_to "Sign Up", howItWorks_path, class: 'blogPostText' %></li>
+        <!--<li><%= link_to "Sign in", new_user_session_path, class: 'blogPostText' %></li>-->
+        <% end %>
+      </ul>
+    </div>
   </div>
-</header>

@@ -1,5 +1,5 @@
 class SignupsController < ApplicationController
-layout 'noheader_nofooter'
+layout 'landingPageHeader'
 
 	def new
 		@signup = Signup.new

@@ -28,7 +28,7 @@
 
 
     <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag "blogposts", media: "all",
+    <%= stylesheet_link_tag "signups", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
@@ -58,12 +58,14 @@
       var WRInitTime=(new Date()).getTime();
       </script>
     <!-- ClickTale end of Top part -->
-    <%= render 'layouts/blogheader' %>
-    <div class="container">
-      <%= yield %>
-      <%= render 'blogsignups/blogfooter' %>
-      <%= debug(params) if Rails.env.development? %>
-    </div>
+    <%= render 'layouts/landingpageheader' %>
+
+        <%= yield %>
+
+      <%= render 'layouts/landingpagefooter' %>
+
+    <%= debug(params) if Rails.env.development? %>
+    
 
     <!-- ClickTale Bottom part -->
 

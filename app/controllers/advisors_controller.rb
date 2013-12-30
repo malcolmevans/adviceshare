@@ -1,5 +1,5 @@
 class AdvisorsController < ApplicationController
-layout 'noheader_nofooter'
+layout 'landingPageHeader'
 
 	def new
 		@advisor = Advisor.new

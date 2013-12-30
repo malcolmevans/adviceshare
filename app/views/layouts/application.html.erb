@@ -10,6 +10,8 @@
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <script type='text/javascript' src='https://s3.amazonaws.com/AdviceShare/jquery.html5-placeholder-shim.js'></script>
     <%= render 'layouts/shim' %>
+    <meta name="description" content="AdviceShare is like match.com for Advice. We make it easier for people seeking an edge to connect with those who want to help, and vice versa.">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -23,11 +25,14 @@
 </script>
 
   </head>
+
   <body>
-    <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
+      <%= render 'layouts/header' %>
+
+        <%= yield %>
+
       <%= render 'layouts/footer' %>
+
       <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
