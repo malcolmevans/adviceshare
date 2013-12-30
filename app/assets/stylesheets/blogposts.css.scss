@@ -88,6 +88,14 @@ html,body {
   font-weight: 300; 
 }
 
+.NoUnderlineForPreviewText{
+  color: #949494 !important;
+  font-weight: 300;
+  line-height:120%;
+  text-decoration: none !important;
+
+}
+
 .blogPostText {
   text-decoration: none !important;
   font-size: 18px; 
