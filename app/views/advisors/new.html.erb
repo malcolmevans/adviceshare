@@ -8,23 +8,22 @@
 
 <div class="row">
 
-  <div class="span3">
-  </div>
+  
 
-  <div class="span4">
+  <div class="span6 offset3">
     <div class="signupparent">
       <div class="signupparentchild">
           
-        <h3 class="text-center">Why Adviceshare?</h3><br>
+        <h3 class="text-center">Why Use Adviceshare?</h3><br>
     <h4 class="text-left">
 
     <div class="">
-          <h4 class="adviserText" style="margin-top: -10px;">Strong matches.</h4>
-          <h5>Let us know the type of people you want to help. E.g. only want to offer advice to people from your alma mater? Let us know and we'll match you accordingly!</h5><br>
-          <h4 class="adviserText"  style="margin-top: -10px;">No regular commitment.</h4>
-          <h5>We know you're busy, so we'll only ask you to help whenever your schedule allows.</h5><br>
-          <h4 class="adviserText" style="margin-top: -10px;">Your own personal assistant.</h4>
-          <h5>No more headaches scheduling a time to connect. We'll coordinate a time that works with your schedule. </h5><br>
+          <h3 class="" style="margin-top: -20px;"><strong>Strong matches.</strong></h3>
+          <h5 style="margin-top: -10px;">No more lukewarm connections or forced conversations.<br> Let us know the type of people you want to help and we'll match you accordingly.</h5><br>
+          <h3 class=""  style="margin-top: -15px;"><strong>No regular commitment.</strong></h3>
+          <h5 style="margin-top: -10px;">We know you're busy and that life can be unpredictable.<br>We'll only ask you to help whenever your schedule allows.</h5><br>
+          <h3 class="" style="margin-top: -15px;"><strong>Your own personal assistant.</strong></h3>
+          <h5 style="margin-top: -10px;">No more headaches finding a time to connect.<br> We'll coordinate all the details around your schedule. </h5><br>
         </div>
         
       </div>
@@ -50,9 +49,9 @@
 
       <%= f.input :education, :label => "", :required => true, :as => :text, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 40px; margin-bottom: -20px;'} %>
 
-      <%= f.input :expertise, :label => "", :required => true, :as => :text, :placeholder => 'What areas of advice are you comfortable speaking about? (e.g.: Summer internships in the Tech industry)', :input_html => {:rows => 10, style: 'width:290px; height: 60px; margin-bottom: -20px;'} %>
+      <%= f.input :expertise, :label => "", :required => true, :as => :text, :placeholder => 'What areas of advice are you comfortable speaking about? (e.g. Summer internships in the Tech industry)', :input_html => {:rows => 10, style: 'width:290px; height: 60px; margin-bottom: -20px;'} %>
 
-      <%= f.input :preferences, :label => "", :required => true, :as => :text, :placeholder => 'What type of people do you want to help (e.g. Alumni from your school)? The more details you provide, the better we can match you!', :input_html => {:rows => 10, style: 'width:290px; height: 65px; ; margin-bottom: px;'} %>
+      <%= f.input :preferences, :label => "", :required => true, :as => :text, :placeholder => 'What type of people do you want to help (e.g. Alumni from your school)? More details means a better match!', :input_html => {:rows => 10, style: 'width:290px; height: 65px; ; margin-bottom: px;'} %>
 
         <!--<%= f.input :linkedin, :label => "", :required => true, :collection => ['Is your LinkedIn profile complete?','Yes','No'], :selected => 'Are you on LinkedIn?', :input_html => {style: 'width:290px; margin-left: -13px;'} %>
         <h6 class="text-left" style="margin-bottom: 8px;">*Note: A complete profile includes up-to-date descriptions of your job and responsibilities</h6>
@@ -65,6 +64,7 @@
         <%= f.input :Job_Responsibilities, :label => ".", :as => :text, :placeholder => 'Please briefly describe your responsibilities in your current role.', :input_html => {:rows => 10, style: 'width:290px; height: 50px; margin-bottom: 15px;'} %>-->
         
         <%= f.button :submit, 'Become an Adviser!', :class=> "btn btn-large btn-primary", style: 'height: 40px; width: 305px;' %>
+        <br>
         <br>
         <br>
         <br>
