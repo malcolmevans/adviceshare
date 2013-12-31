@@ -45,15 +45,15 @@
       <% end %> -->  
       <%= f.input :name, :label => "", :required => true, :placeholder => 'Name', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
         
-      <%= f.input :email, :label => "", :required => true, :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
+      <%= f.input :email, :label => ".", :required => true, :placeholder => 'Email', :input_html => {style: 'width:290px; height: 30px; margin-bottom: -20px;'} %>
 
-      <%= f.input :education, :label => "", :required => true, :as => :text, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 40px; margin-bottom: -20px;'} %>
+      <%= f.input :education, :label => ".", :required => true, :as => :text, :placeholder => 'Please list the universities you have attended along with the degree(s) you received.', :input_html => {:rows => 10, style: 'width:290px; height: 40px; margin-bottom: -20px;'} %>
 
-      <%= f.input :expertise, :label => "", :required => true, :as => :text, :placeholder => 'What areas of advice are you comfortable speaking about? (e.g. Summer internships in the Tech industry)', :input_html => {:rows => 10, style: 'width:290px; height: 60px; margin-bottom: -20px;'} %>
+      <%= f.input :expertise, :label => ".", :required => true, :as => :text, :placeholder => 'What areas of advice are you comfortable speaking about? (e.g. Summer internships in the Tech industry)', :input_html => {:rows => 10, style: 'width:290px; height: 60px; margin-bottom: -20px;'} %>
 
-      <%= f.input :preferences, :label => "", :required => true, :as => :text, :placeholder => 'What type of people do you want to help (e.g. Alumni from your school)? More details means a better match!', :input_html => {:rows => 10, style: 'width:290px; height: 65px; ; margin-bottom: px;'} %>
+      <%= f.input :preferences, :label => ".", :required => true, :as => :text, :placeholder => 'What type of people do you want to help (e.g. Alumni from your school)? More details means a better match!', :input_html => {:rows => 10, style: 'width:290px; height: 65px; ; margin-bottom: px;'} %>
 
-        <!--<%= f.input :linkedin, :label => "", :required => true, :collection => ['Is your LinkedIn profile complete?','Yes','No'], :selected => 'Are you on LinkedIn?', :input_html => {style: 'width:290px; margin-left: -13px;'} %>
+        <!--<%= f.input :linkedin, :label => "", :collection => ['Is your LinkedIn profile complete?','Yes','No'], :selected => 'Are you on LinkedIn?', :input_html => {style: 'width:290px; margin-left: -13px;'} %>
         <h6 class="text-left" style="margin-bottom: 8px;">*Note: A complete profile includes up-to-date descriptions of your job and responsibilities</h6>
         
         <h6 class="text-left" style="margin-bottom: -10px;">*Skip these fields if you have a complete LinkedIn profile and click "Become an Adviser!"</h6>
