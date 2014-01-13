@@ -6,6 +6,10 @@ layout 'landingPageHeader'
     @signup = Signup.new
   end
 
+  def earlyaccess
+    @signup = Signup.new
+  end
+
   def howItWorks
   end
 

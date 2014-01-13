@@ -30,7 +30,8 @@ AdviceShare::Application.routes.draw do
 
   #Static Pages
     match '/home',    to: 'static_pages#home',    via: 'get'
-    
+    match '/early-access',    to: 'static_pages#earlyaccess',    via: 'get'
+
     match '/topics',    to: 'static_pages#topics',    via: 'get'
     match '/howItWorks',    to: 'static_pages#howItWorks',    via: 'get'
     match '/contact',    to: 'static_pages#contact',    via: 'get'
