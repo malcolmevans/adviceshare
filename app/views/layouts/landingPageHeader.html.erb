@@ -50,6 +50,18 @@
 
 </script>
 
+    <script type="text/javascript">
+$('#myTab a').click(function (e) {
+    if($(this).parent('li').hasClass('active')){
+        $( $(this).attr('href') ).hide();
+    }
+    else {
+        e.preventDefault();
+        $(this).tab('show');
+    }
+});
+    </script>
+
 <%= favicon_link_tag 'AS_Favicon.png' %>
   </head>
   <body>

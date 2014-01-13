@@ -1,115 +1,78 @@
 <div class="middleSectionOfLandingPage">
-  <div class="row">
-    <div id="wrapper" class="container">
-            <div class="">
-                <div class="center span10">
-                 <ul class="thumbnails">
-                        <li class="span1" id="item2"></li>
-                        <li class="span8" id="item3">
-                          <h1 class="text-center" style="margin-top: 160px; font-size: 50px; line-height: 150%;">An easier way to give <br>and receive great advice.</h1>
-                        </li>
-                        <li class="span1"></li>
-                   </ul><!--/.thumbnails-->
-                </div><!--/.center-->
-            </div><!--/.row-->
-    </div><!--#wrapper-->
+  <div class="row-fluid">
+    <div class="span1 center">
+     </div>
+
+     <div class="span10 center">
+      <h1 class="text-center" style="margin-top: 160px; font-size: 50px; line-height: 150%;">An easier way to give and receive great advice.</h1>
+    </div>
+
+    <div class="span1 center">
+    </div>
   </div>
 
+<br>
+<br>
+<br>
 
-<div class="row" style="margin-top: -30px;">
-  <div id="wrapper" class="container">
-          <div class="">
-              <div class="center span12">
-               <ul class="thumbnails">
-                      <li class="span4" id="item1">
-                          <img class="" style="width: 300px; margin-top: -100px;" src=""/>
-                          <br>
-                          <a class="" href=""><i class="fa fa-list-alt fa-5x howItWorksIcons"></i></a>
-                          <h2 class="howItWorksMainText">Share your preferences.</h2>
-                          <h4 class="howItWorksSubText">Tell us the type of people you want to help.<br>
-                            Let us know the type of advice you're seeking.</h4>
-                      </li>    
-                      <li class="span4" id="item2">
-                          <img class="" style="width: 275px; margin-top: -50px;" src=""/>
-                          <br>
-                          <a class="" href=""><i class="fa fa-comments-o fa-5x howItWorksIcons"></i></a>
-                          <h2 class="howItWorksMainText">Connect with your match.</h2>
-                          <h4 class="howItWorksSubText">No more lukewarm connections or wasted time.<br> We'll find the type of people you want to chat with based on your preferences.</h4>
-                          <br>
-                          <br>
-                      </li>
-                      <li class="span4" id="item3">
-                          <img class="" style="width: 200px; margin-top: -50px;" src=""/>
-                          <br>
-                          <a class="" href=""><i class="fa fa-trophy fa-5x howItWorksIcons"></i></a>
-                          <h2 class="howItWorksMainText">Make an Impact.</h2>
-                          <h4 class="howItWorksSubText">Give advice to help someone succeed like you.<br>Get the advice you need to reach your goals.</h4>
-                      </li>
-                      <li class="span3"></li>
-                 </ul><!--/.thumbnails-->
-              </div><!--/.center-->
-          </div><!--/.row-->
-  </div><!--#wrapper-->
+<div class="row-fluid">
+  <div class="span4 center">
+    <br>
+    <a class="" href=""><i class="fa fa-list-alt fa-5x howItWorksIcons"></i></a>
+    <h2 class="howItWorksMainText">Share your preferences.</h2>
+    <h4 class="howItWorksSubText">Tell us the type of people you want to help.<br>
+      Let us know the type of advice you're seeking.</h4>
+    <br>
+    <br>  
+   </div>
 
-<div class="row">
-  <div id="wrapper" class="container">
-          <div class="">
-              <div class="center span12">
-               <ul class="thumbnails">
-                      <li class="span1" id="item3"></li>
-                      <li class="span10" id="item2">
-                          
-                          <%= simple_form_for @signup, :html => {:class => 'form-horizontal' } do |f| %>
-                          <div class="controls controls-row">
-                          <% end %> 
-                          </div>
-                          
-                      </li>
-                      
-                 </ul><!--/.thumbnails-->
-              </div><!--/.center-->
-          </div><!--/.row-->
-  </div><!--#wrapper-->
-  </div>
+   <div class="span4 center">
+    <br>
+    <a class="" href=""><i class="fa fa-comments-o fa-5x howItWorksIcons"></i></a>
+    <h2 class="howItWorksMainText">Connect with your match.</h2>
+    <h4 class="howItWorksSubText">No more lukewarm connections or wasted time.<br> We'll find the type of people you want to talk to.</h4>
+    <br>
+    <br>
+    </div>
+    <div class="span4 center">
+      <br>
+      <a class="" href=""><i class="fa fa-trophy fa-5x howItWorksIcons"></i></a>
+      <h2 class="howItWorksMainText">Make an Impact.</h2>
+      <h4 class="howItWorksSubText">Give advice to help someone succeed like you.<br>Get the advice you need to reach your goals.</h4>
+      <br>
+      <br>
+   </div>
 </div>
 
-<div class="row" style="margin-top: -20px;">
-  <div id="wrapper" class="container">
-          <div class="">
-              <div class="center span10">
-               <ul class="thumbnails">
-                      <li class="span1" id="item1"></li>
-                      <li class="span8" id="item2">
-                        <%= simple_form_for @signup, :html => {:class => 'form-horizontal' } do |f| %>
-                         <%= f.input_field :name, :label => "", :required => true, :placeholder => 'Name', :style => "height: 30px; width: 200px; margin-bottom: 10px;" %>
-                          <%= f.input_field :email, :label => "", :required => true, :placeholder => 'Email', :style => "height: 30px; width: 200px; margin-bottom: 10px;" %>
-                          <!--<%= f.input :message, :label => "", :required => true, :as => :text, :placeholder => 'What type of advice are you looking for?', :input_html => {style: 'width:250px; height: 60px;'} %>-->
-                          <%= f.button :submit, 'Get Early Access', :class=> "btn-large btn-primary", style: 'margin-top: -10px; height: 40px; width: 200px;' %>
-                        <% end %> 
-                      </li>
-                      <li class="span1" id="item3"></li>
-                 </ul><!--/.thumbnails-->
-              </div><!--/.center-->
-          </div><!--/.row-->
-  </div><!--#wrapper-->
-  </div>
-</div>
+<br>
+<br>
+<br>
+<br>
 
-<div class="row" style="margin-top: -40px;">
-  <div id="wrapper" class="container">
-          <div class="">
-              <div class="center span10">
-               <ul class="thumbnails">
-                      <li class="span1" id="item1"></li>
-                      <li class="span8" id="item2">
-                        <%= link_to "Want to share advice? Click Here!", new_advisor_path, class: 'adviserLinks' %>
-                      </li>
-                      <li class="span1" id="item3"></li>
-                 </ul><!--/.thumbnails-->
-              </div><!--/.center-->
-          </div><!--/.row-->
-  </div><!--#wrapper-->
+<br>
+<br>
+
+  <div class="row-fluid" style="margin-top: -50px;">
+    <div class="span1 center">
+     </div>
+
+     <div class="span10 center">
+      <%= simple_form_for @signup, :html => {:class => 'form-horizontal' } do |f| %>
+       <%= f.input_field :name, :label => "", :required => true, :placeholder => 'Name', :style => "height: 30px; width: 200px; margin-bottom: 10px;" %>
+        <%= f.input_field :email, :label => "", :required => true, :placeholder => 'Email', :style => "height: 30px; width: 200px; margin-bottom: 10px;" %>
+        <!--<%= f.input :message, :label => "", :required => true, :as => :text, :placeholder => 'What type of advice are you looking for?', :input_html => {style: 'width:250px; height: 60px;'} %>-->
+        <%= f.button :submit, 'Get Early Access', :class=> "btn-large btn-primary", style: 'margin-top: -10px; height: 40px; width: 200px;' %>
+      <% end %> 
+    </div>
+
+    <div class="span1 center">
+    </div>
   </div>
+
+<br>
+<br>
+<br>
+
 </div>
 
 

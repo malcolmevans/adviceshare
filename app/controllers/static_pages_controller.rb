@@ -1,8 +1,9 @@
 class StaticPagesController < ApplicationController
-layout 'noheader_nofooter'
+layout 'landingPageHeader'
   #before_filter :authenticate_user!
 
   def home
+    @signup = Signup.new
   end
 
   def howItWorks

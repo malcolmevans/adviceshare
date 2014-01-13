@@ -1,0 +1,150 @@
+<header class="navigation" id="" style="margin-bottom: -20px;">
+
+
+        <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare+full+white+logo+bigger.png"), "", :id => "NavBarLogo" %>
+
+        
+       <ul class="nav nav-tabs">
+
+        <% if current_page?(root_path) %>
+        <li class="active"><%= link_to "New Request", root_path, class: 'TabText'  %></li>
+        <li class="nonactive"><%= link_to "Pending", blog_path, class: 'TabText'  %></li>  
+        <% elsif current_page?(blog_path) %>
+        <li class="nonactive"><%= link_to "New Request", root_path, class: 'TabText'  %></li>
+        <li class="active"><%= link_to "Pending", blog_path, class: 'TabText'  %></li>   
+        <% end %> 
+      </ul>
+       
+      <!--<ul class="nav nav-tabs">
+
+        <% if current_page?(root_path) %>
+        <li class="nonactive"><%= link_to "New Request", new_request_path, class: 'TabText'  %></li>
+        <li class="nonactive"><%= link_to "Pending", blog_path, class: 'TabText'  %></li> 
+        <li class="nonactive"><%= link_to "Upcoming", upcoming_requests_path, class: 'TabText'  %></li> 
+        <li class="nonactive"><%= link_to "Completed", completed_requests_path, class: 'TabText'  %></li>
+        <li class="nav pull-right nonactive"><%= "Log Out", destroy_user_session_path, class: 'RightTabText'  %></li>
+        <li class="nav pull-right nonactive"><%= link_to "", my_profile_path, class: 'fa fa-cog fa-2x headerIcons'  %></li>
+        <% if @unread_count > 0 %> 
+        <li class="nav pull-right nonactive"><%= link_to "( #{@unread_count} new )", root_path, class: 'fa fa-exclamation fa-2x headerIcons'  %></li>
+        <%else%>
+        <%= link_to "Notifications", '/admin_notifications'%>&nbsp; &nbsp; 
+        <%end%>   
+        <% elsif current_page?(new_request_path) %>  
+        <li class="active"><%= link_to "New Request", new_request_path, class: 'TabText'  %></li>
+        <li class="nonactive"><%= link_to "Pending", blog_path, class: 'TabText'  %></li> 
+        <li class="nonactive"><%= link_to "Upcoming", upcoming_requests_path, class: 'TabText'  %></li> 
+        <li class="nonactive"><%= link_to "Completed", completed_requests_path, class: 'TabText'  %></li> 
+        <% elsif current_page?(blog_path) %>
+        <li class="nonactive"><%= link_to "New Request", new_request_path, class: 'TabText'  %></li>
+        <li class="active"><%= link_to "Pending", blog_path, class: 'TabText'  %></li> 
+        <li class="nonactive"><%= link_to "Upcoming", upcoming_requests_path, class: 'TabText'  %></li> 
+        <li class="nonactive"><%= link_to "Completed", completed_requests_path, class: 'TabText'  %></li>
+        <% elsif current_page?(upcoming_requests_path) %>
+        <li class="nonactive"><%= link_to "New Request", new_request_path, class: 'TabText'  %></li>
+        <li class="nonactive"><%= link_to "Pending", blog_path, class: 'TabText'  %></li> 
+        <li class="active"><%= link_to "Upcoming", upcoming_requests_path, class: 'TabText'  %></li> 
+        <li class="nonactive"><%= link_to "Completed", completed_requests_path, class: 'TabText'  %></li>
+        <% elsif current_page?(completed_requests_path) %>
+        <li class="nonactive"><%= link_to "New Request", new_request_path, class: 'TabText'  %></li>
+        <li class="nonactive"><%= link_to "Pending", blog_path, class: 'TabText'  %></li> 
+        <li class="nonactive"><%= link_to "Upcoming", upcoming_requests_path, class: 'TabText'  %></li> 
+        <li class="active"><%= link_to "Completed", completed_requests_path, class: 'TabText'  %></li>    
+        <% end %> 
+        
+        <% if current_page?(root_path) %>  
+        <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "asdjasj", root_path, class: 'TabText'  %></li>
+        <% else %>
+        <li class="<%= 'nonactive' if current_page?(root_path) %>"><%= link_to "New Request", root_path, class: 'TabText'  %></li> 
+        <% end %> 
+
+      <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "New Request", root_path, class: 'TabText' %></li>
+
+      <% if current_page?(root_path) %>  
+        <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "hjhljkh", contact_path, class: 'TabText'  %></li>
+        <% else %>
+        <li class="<%= 'nonactive' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path, class: 'TabText'  %></li> 
+        <% end %>
+      </ul>-->
+
+
+</header>
+
+
+------------
+
+
+<header class="navigation" id="" style="margin-bottom: -20px;">
+      <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AdviceShare+Logos/AdviceShare+full+white+logo+bigger.png"), "", :id => "NavBarLogo" %>  
+       <ul class="nav nav-pills">
+        <li class="nav pull-right nonactive"><%= link_to "", root_path, class: 'RightTabText'  %></li>
+        <li class="nav pull-right nonactive"><%= link_to "Log Out", root_path, class: 'RightTabText'  %></li>
+        <li class="nav pull-right nonactive"><%= link_to "", root_path, class: 'fa fa-cog fa-2x headerIcons RightTabText'  %></li>
+        <li class="nav pull-right nonactive"><%= link_to "notifications", root_path, style: 'color: red;', class: 'RightTabText'  %></li>
+      </ul>
+</header>
+
+<div class="row">
+  <div class="span2">
+   </div>
+   <div class="span3">
+    <ul class="nav nav-pills center">
+        <li class="active"><%= link_to "New Request", root_path, class: 'PillsText'  %></li>
+     </ul>
+    </div>
+    <div class="span3">
+    <ul class="nav nav-pills">
+        <li class="nonactive"><%= link_to "Pending", blog_path, class: 'PillsText'  %></li>
+     </ul>
+    </div> 
+    <div class="span3">
+    <ul class="nav nav-pills">
+        <li class="nonactive"><%= link_to "Upcoming", blog_path, class: 'PillsText'  %></li>
+     </ul>
+    </div> 
+    <div class="span2">
+    <ul class="nav nav-pills">
+        <li class="nonactive"><%= link_to "Completed", blog_path, class: 'PillsText'  %></li>
+     </ul>
+    </div> 
+
+   </div>  
+</div>   
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="span2">
+   </div>
+   <div class="span8">
+    <table class="table table-striped">
+      <tr> 
+         <th>Request</th>  
+         <th>Community</th>  
+         <th>From</th>
+         <th>Request Deadline</th>  
+      </tr> 
+      <tr> 
+        <td>Request</td>    
+        <td>Community</td>  
+        <td>From</td>
+        <td>Request Deadline</td>  
+      </tr>
+      <tr> 
+        <td>Request</td>    
+        <td>Community</td>  
+        <td>From</td>
+        <td>Request Deadline</td>  
+      </tr>
+      <tr> 
+        <td>Request</td>    
+        <td>Community</td>  
+        <td>From</td>
+        <td>Request Deadline</td>  
+      </tr>
+    </table>
+
+    </div>
+    <div class="span2">
+   </div>
+</div>

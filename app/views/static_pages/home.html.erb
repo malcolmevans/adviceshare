@@ -1,14 +1,75 @@
-<div class="center hero-unit">
-  <h1>AdviceShare</h1>
-	<% if user_signed_in? %>  
-		<%= render 'static_pages/search' %>
-    <% else %>
-   <p>
-     <%= link_to "Sign up", new_user_registration_path, 
-     class: "btn btn-large btn-primary" %>
-     <br>
-     <br>
-     <!--<%= link_to "Log in", new_user_session_path, class: "btn btn-large" %> -->
-   </p>
-  <% end %>
+<div class="middleSectionOfLandingPage">
+  <div class="row-fluid">
+    <div class="span1 center">
+     </div>
+
+     <div class="span10 center">
+      <h1 class="text-center" style="margin-top: 160px; font-size: 50px; line-height: 150%;">The easiest way for alumni to help out students <br> and for students to connect with alumni.</h1>
+    </div>
+
+    <div class="span1 center">
+    </div>
+  </div>
+
+
+<div class="row-fluid">
+  <div class="span4 center">
+    <br>
+    <a class="" href=""><i class="fa fa-list-alt fa-5x howItWorksIcons"></i></a>
+    <h2 class="howItWorksMainText">Share your preferences.</h2>
+    <h4 class="howItWorksSubText">Tell us the type of people you want to help.<br>
+      Let us know the type of advice you're seeking.</h4>
+    <br>
+    <br>  
+   </div>
+
+   <div class="span4 center">
+    <br>
+    <a class="" href=""><i class="fa fa-comments-o fa-5x howItWorksIcons"></i></a>
+    <h2 class="howItWorksMainText">Connect with your match.</h2>
+    <h4 class="howItWorksSubText">No more lukewarm connections or wasted time.<br> We'll find the type of people you want to talk to.</h4>
+    <br>
+    <br>
+    </div>
+    <div class="span4 center">
+      <br>
+      <a class="" href=""><i class="fa fa-trophy fa-5x howItWorksIcons"></i></a>
+      <h2 class="howItWorksMainText">Make an Impact.</h2>
+      <h4 class="howItWorksSubText">Give advice to help someone succeed like you.<br>Get the advice you need to reach your goals.</h4>
+      <br>
+      <br>
+   </div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+  <div class="row-fluid" style="margin-top: -50px;">
+    <div class="span1 center">
+     </div>
+
+     <div class="span10 center">
+      <%= simple_form_for @signup, :html => {:class => 'form-horizontal' } do |f| %>
+       <%= f.input_field :name, :label => "", :required => true, :placeholder => 'Name', :style => "height: 30px; width: 200px; margin-bottom: 10px;" %>
+        <%= f.input_field :email, :label => "", :required => true, :placeholder => 'Email', :style => "height: 30px; width: 200px; margin-bottom: 10px;" %>
+        <!--<%= f.input :message, :label => "", :required => true, :as => :text, :placeholder => 'What type of advice are you looking for?', :input_html => {style: 'width:250px; height: 60px;'} %>-->
+        <%= f.button :submit, 'Get Early Access', :class=> "btn-large btn-primary", style: 'margin-top: -10px; height: 40px; width: 200px;' %>
+      <% end %> 
+    </div>
+
+    <div class="span1 center">
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+
+</div>
+
+
