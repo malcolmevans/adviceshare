@@ -1,6 +1,6 @@
 <!-- SHARE FORM -->
 
-<div style="text-align: center;">
+<div style="text-align: center;" id="">
   <div style="display: inline-block; text-align: left;">
   	<!-- AddThis Button BEGIN -->
 		<div class="addthis_default_style addthis_32x32_style"
@@ -38,7 +38,7 @@
 	  <div style="text-align: center;">
 
 			<h2 class="text-center formMainText">From "ugh" to "yes!", we're sharing everything we learned in securing highly coveted opportunities.</h2>
-	    <h2 class="text-center formSubText">We've learned a lot and so will you.</h2>
+	    <h2 class="text-center formSubText">Sign up to get our posts before they go live.</h2>
 		  <div style="display: inline-block; text-align: left;">
 		  	 <% @blogsignup ||= Blogsignup.new %>
 					<%= simple_form_for @blogsignup, :html => {:class => 'form-inline' } do |f| %>
