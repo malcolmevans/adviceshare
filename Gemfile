@@ -17,6 +17,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 gem 'jquery-placeholder-rails'
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'layout_by_action'
 
 # Forms, mail {
 gem 'mail_form', '~> 1.5.0.rc'
