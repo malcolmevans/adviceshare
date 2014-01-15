@@ -12,7 +12,7 @@ AdviceShare::Application.routes.draw do
   #Blog Templates
     match '/blog/homepagetemplate',    to: 'blogposts#blogPostHomePageTemplate',    via: 'get'
     match '/blog/samplepost',    to: 'blogposts#blogPostTemplate',    via: 'get'
-    match '/blog/postComingSoon',    to: 'blogposts#postNotReadyYet',    via: 'get'
+    match '/blog/Blog-Signup',    to: 'blogposts#postNotReadyYet',    via: 'get'
 
   #Blog
     resources :blogsignups#, path: '/blog'
