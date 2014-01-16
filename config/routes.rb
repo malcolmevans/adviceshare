@@ -13,6 +13,7 @@ AdviceShare::Application.routes.draw do
   #Blog Templates
     match '/blog/homepagetemplate',    to: 'blogposts#blogPostHomePageTemplate',    via: 'get'
     match '/blog/samplepost',    to: 'blogposts#blogPostTemplate',    via: 'get'
+    match '/blog/get-blog-posts-early', to: 'blogposts#onlySignUpFormIndex',    via: 'get'
     
 
   #Blog
