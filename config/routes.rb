@@ -6,6 +6,7 @@ AdviceShare::Application.routes.draw do
   #Blog Posts
     match '/blog/highly-coveted-professional-and-academic-positions',    to: 'blogposts#openingPost',    via: 'get'
     match '/blog',    to: 'blogposts#index',    via: 'get'
+    match '/Blog',    to: 'blogposts#index',    via: 'get'
     match '/blog/Life-Hacks-for-Holiday-Season-Productivity',    to: 'blogposts#holidayProductivity',    via: 'get'
     match '/blog/Selecting-Applicants-For-Interviews',    to: 'blogposts#selectingCandidates',    via: 'get'
 
