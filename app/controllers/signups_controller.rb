@@ -11,7 +11,6 @@ layout 'landingPageHeader'
 			if @signup.deliver
 			else
 			  flash.now[:notice] = "Post can not be saved, please enter information."
-			  
 			end
 	end
 
