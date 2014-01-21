@@ -6,10 +6,12 @@
           <div class="blogheader">
     <div class="container-fluid">
       <!--<img id="logo" class="positionAS" src="https://s3.amazonaws.com/AdviceShare/AS_Favicons/AS+Favicon+w%3A+Full+Text.png"  />-->
-      <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AS_Favicons/AS+Favicon+w%3A+Full+Text.png"), blog_path, :id => "logo", :class =>"positionAS" %>
+      <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AS_Favicons/AS+Favicon+w%3A+Full+Text.png"), blog_path, :id => "logo", :class =>"positionAS visible-mobile hidden-table hidden-desktop" %>
+      <%= link_to image_tag("https://s3.amazonaws.com/AdviceShare/AS_Favicons/AS+Favicon+w%3A+Full+Text.png"), blog_path, :id => "logo", :class =>"positionAS visible-desktop visible-tablet", style:'margin-left: 80px'%>
       <ul class="nav pull-right">
-                        <%= link_to "Subscribe", "/subscribe", class: 'headerlinks, pull-right', style:'margin-top: 16px;' %>
-                        <%= link_to "What is AdviceShare?", root_path, class: 'headerlinks, pull-right', style:'margin-top: 16px;' %>
+                        <%= link_to "", "/subscribe", class: 'headerlinks, pull-right', style:'margin-top: 16px;' %>
+                         <%= link_to "What is AdviceShare?", root_path, class: 'headerlinks visible-desktop visible-tablet pull-right', style:'margin-top: 16px; margin-right: 10px; font-size: 10px;' %>
+                        <%= link_to "What is AdviceShare?", root_path, class: 'headerlinks visible-mobile hidden-table hidden-desktop pull-right', style:'margin-top: -15px; margin-bottom: 40px; margin-right: -30px; font-size: 10px;' %>
 
                         </ul>
   </div>
