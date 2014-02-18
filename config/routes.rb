@@ -9,6 +9,7 @@ AdviceShare::Application.routes.draw do
     match '/Blog',    to: 'blogposts#index',    via: 'get'
     match '/blog/Life-Hacks-for-Holiday-Season-Productivity',    to: 'blogposts#holidayProductivity',    via: 'get'
     match '/blog/Selecting-Applicants-For-Interviews',    to: 'blogposts#selectingCandidates',    via: 'get'
+     match '/blog/Acing-Your-Next-Interview',    to: 'blogposts#interviewTechniques',    via: 'get'
 
   #Blog Templates
     match '/blog/homepagetemplate',    to: 'blogposts#blogPostHomePageTemplate',    via: 'get'

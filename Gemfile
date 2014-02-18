@@ -13,11 +13,15 @@ gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'tire'
 gem 'seed_dump'
-gem 'will_paginate', '~> 3.0'
-gem 'will_paginate-bootstrap'
 gem 'jquery-placeholder-rails'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'layout_by_action'
+
+#Forum
+gem 'forem', :github => "radar/forem", :branch => "rails4"
+gem 'friendly_id', github: "FriendlyId/friendly_id"
+gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
+gem 'will_paginate', '3.0.5'
 
 # Forms, mail {
 gem 'mail_form', '~> 1.5.0.rc'
